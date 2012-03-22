@@ -2,10 +2,6 @@ title: March Mobile Madness Hackathon
 
 !SLIDE
 
-## March Mobile Madness
-
-!SLIDE
-
 ## About Me
 - Developer Advocate @ [Cloud Foundry](http://cloudfoundry.com)
 - 12 years software development experience
@@ -15,7 +11,7 @@ title: March Mobile Madness Hackathon
 - twitter : [@ciberch](http://twitter.com/ciberch)
 - email: [mwilkinson@vmware.com](mailto:mwilkinson@vmware.com)
 
-![main](/img/mobile-mon.png)
+![main](/img/head2.jpg)
 
     Loves the web and data portability.
 
