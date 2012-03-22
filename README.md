@@ -1,4 +1,4 @@
-## Presos
+## Slideshows for Cloud Foundry
 
 This repo will have all the presos I am using for Cloud Foundry presentations.
 Feel free to fork and use.
