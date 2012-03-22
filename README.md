@@ -26,13 +26,13 @@ Then generate as many slide sets as you want.
 I generated 2 sets one for mobile viewing:
 
 ``` bash
-slideshow -t ~/.slideshow/templates/monica/s6.txt index.md -o ../public/mobile
+slideshow -t ~/.slideshow/templates/monica/s6.txt index.md -o ../output/public/mobile
 ```
 
 And one for desktop viewing:
 
 ```
-slideshow -t deck.js.txt index.md -o ../public/mobile-alt
+slideshow -t deck.js.txt index.md -o ../output/public/mobile-alt
 ```
 
 Finally you can push this app to Cloud Foundry for example
