@@ -9,12 +9,6 @@ In order to use these slides you will need to
 gem install slideshow
 ```
 
-or
-
-``` ruby
-bundle install
-```
-
 To read about the SlideShow gem go [here](http://slideshow.rubyforge.org/)
 
 ## Generation
@@ -44,7 +38,9 @@ slideshow -t deck.js.txt index.md -o ../public/mobile-alt
 Finally you can push this app to Cloud Foundry for example
 
 ``` bash
-cd ..
+cd output
+bundle install
+bundle package
 vmc push
 ```
 
