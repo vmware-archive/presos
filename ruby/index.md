@@ -93,8 +93,10 @@ title: Ruby Development on Cloud Foundry
 
 ## Auto Reconfiguration
 
-This is a feature we call "auto-reconfiguration".  
-The auto-reconfiguration capability will automatically locate the initialization for all services.
+Until this feature was released, ruby developers had to add code to read at runtime the credentials for each service.
+
+Gems like [cloudfoundry-env](https://github.com/cloudfoundry-samples/cloudfoundry-env) helped with this task but now thanks to code injection
+All connections against localhost are modified to access the proper service
 
 **It just works**
 
@@ -103,17 +105,20 @@ The auto-reconfiguration capability will automatically locate the initialization
 ## Service tunneling
 
 - The ability to access any service on Cloud Foundry as if it was running locally
+
 <% code do %>
-gem install caldecott
-vmc tunnel <service_name>
+    gem install caldecott
+    vmc tunnel <service_name>
 <% end %>
 
 TODO: Add MongoHub Screenshot
 
-# Rails Console
+!SLIDE
+
+## Rails Console
 
 <% code do %>
-vmc rails-console <appname>
+    vmc rails-console <appname>
 <% end %>
 
 - Requires 0.3.16.beta.3 or higher.
@@ -122,7 +127,7 @@ TODO: Add screenshot
 
 !SLIDE
 
-# Standalone" applications. 
+## Standalone" applications. 
 
 - These applications are executed as normal system processes rather than deployed through an application or web server. 
 These are often background or asynchronous jobs that work on processing items off a queue, for example. 
