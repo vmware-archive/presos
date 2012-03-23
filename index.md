@@ -2,6 +2,19 @@ title: Cloud Foundry™ Presents
 
 !SLIDE
 
+## Patrick Chanezon
+
+### Ruby Session Shanghai, China
+- March 30th, 2012
+- [Event](http://opentour.cloudfoundry.com/2012/shanghai)
+- [Slides](/ruby/index.html)
+
+!SLIDE
+
+<%= include "shared/patrick.md" %>
+
+!SLIDE
+
 ## Monica Wilkinson
 
 ### *March Mobile Madness*
@@ -56,14 +69,6 @@ title: Cloud Foundry™ Presents
 
 <%= include "shared/monica.md" %>
 
-!SLIDE
-
-## Patrick Chanezon
-
-### Ruby Session Shanghai, China
-- March 30th, 2012
-- [Event](http://opentour.cloudfoundry.com/2012/shanghai)
-- [Slides](/ruby/index.html)
 
 !SLIDE
 
