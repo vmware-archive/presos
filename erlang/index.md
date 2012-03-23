@@ -14,7 +14,7 @@ title: Deploy Faster
 
 !SLIDE
 
-<%= include "../shared/monica.md" %>
+<%= include "../shared/us/monica.md" %>
 
 !SLIDE
 

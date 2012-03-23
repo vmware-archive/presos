@@ -2,7 +2,7 @@ title: Ruby Development on Cloud Foundry
 
 !SLIDE
 
-<%= include "../shared/patrick.md" %>
+<%= include "../shared/us/patrick.md" %>
 
 !SLIDE
 
@@ -53,7 +53,6 @@ All connections against localhost are modified to access the proper service
 **It just works**
 
 !SLIDE
-
 
 <%= include "../shared/caldecott.md" %>
 

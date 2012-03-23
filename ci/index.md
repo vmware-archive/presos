@@ -2,7 +2,7 @@ title: Ruby Development on Cloud Foundry
 
 !SLIDE
 
-<%= include "../shared/monica.md" %>
+<%= include "../shared/us/monica.md" %>
 
 !SLIDE
 

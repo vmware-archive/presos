@@ -9,9 +9,7 @@ title: Cloud Foundry™ Presents
 - [Event](http://opentour.cloudfoundry.com/2012/shanghai)
 - [Slides](/ruby/index.html)
 
-!SLIDE
-
-<%= include "shared/patrick.md" %>
+<%= include "shared/us/patrick.md" %>
 
 !SLIDE
 
@@ -30,6 +28,8 @@ title: Cloud Foundry™ Presents
 - [Event](http://www.erlang-factory.com/conference/SFBay2012/speakers/MonicaWilkinson)
 - [Slides](/erlang/index.html)
 
+<%= include "shared/us/monica.md" %>
+
 !SLIDE
 
 ## Monica @ Cloud Foundry Open Tour
@@ -46,10 +46,6 @@ title: Cloud Foundry™ Presents
 - [Bootcamp Slides](/bootcamp/index.html)
 - [MongoDB Slides](/mongodb/index.html)
 
-!SLIDE
-
-## Monica @ Cloud Foundry Open Tour
-
 ### Ruby Session Austin
 - April 5th, 2012
 - [Event](http://opentour.cloudfoundry.com/2012/austin)
@@ -64,10 +60,6 @@ title: Cloud Foundry™ Presents
 ### MongoSF
 - May 4th, 2012 @ MongoSF
 - [Slides](/mongodb/index.html)
-
-!SLIDE
-
-<%= include "shared/monica.md" %>
 
 
 !SLIDE

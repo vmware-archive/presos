@@ -17,12 +17,39 @@ title: March Mobile Madness Hackathon
 
 !SLIDE
 
-<%= include "../shared/monica.md" %>
+<%= include "../shared/us/monica.md" %>
 
+!SLIDE
+
+<%= include "../shared/motivation/moore_hw_only.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/moore_hw_only_2.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/agility.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/computing_trends.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/mobile.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/why_paas.md" %>
 
 !SLIDE
 
 <%= include "../shared/intro_paas.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/open_source.md" %>
 
 !SLIDE
 
@@ -58,7 +85,7 @@ title: March Mobile Madness Hackathon
 !SLIDE
 
 
-## Rules
+## Contest Rules
 
 - There will be up to 3 winning teams.
 - Max members per team : 3

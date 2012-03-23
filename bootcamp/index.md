@@ -2,7 +2,7 @@ title: Cloud Foundry Bootcamp
 
 !SLIDE
 
-<%= include "../shared/monica.md" %>
+<%= include "../shared/us/monica.md" %>
 
 !SLIDE
 

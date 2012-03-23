@@ -10,4 +10,4 @@
 - 6 years at Google,  API guy (first hired, helped start the team)
 - Adwords, Checkout, Social, HTML5, Cloud
 
-![main](/img/speaker-chanezon.png)
+![main](/img/chanezon.jpg)
