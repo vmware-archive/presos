@@ -27,10 +27,10 @@ title: March Mobile Madness Hackathon
 
 ### Example
 
-<% code do %>
+
     git clone https://github.com/ciberch/node-activities-boilerplate
+
     cd node-activities-boilerplate
-<% end %>
 
 !SLIDE
 
