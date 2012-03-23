@@ -1,4 +1,4 @@
-title: Ruby Development on Cloud Foundry
+title: Cloud Foundry Bootcamp
 
 !SLIDE
 
@@ -18,24 +18,24 @@ title: Ruby Development on Cloud Foundry
 
 !SLIDE
 
-## Ruby Support
-
-### Runtimes
+## Runtimes
 - Ruby 1.8.7
 - Ruby 1.9.2
-
-### Frameworks
-- Sinatra
-- Rails
+- Java 6 1.6
+- Node 0.4.12
+- Node 0.6.8
 
 !SLIDE
 
-## New framework Support
-- Rails 3.1 and 3.2 applications are now well-supported on CloudFoundry.com. 
-- JRuby
-- Rack Applications - Applications written with Rack, a modular Ruby web server interface, are now supported. 
-  - Cloud Foundry's VMC will automatically recognize a config.ru Rackup file and use it to run your web application. 
-  - The auto-reconfiguration feature is also supported for rack applications
+## Frameworks
+- Sinatra
+- Rails 3
+- Rack
+- Scala/Lift
+- NodeJS
+- Grails
+- Spring
+- Java Web
 
 !SLIDE
 
@@ -90,6 +90,7 @@ TODO: Add screenshot
 !SLIDE
 
 <%= include "../shared/manifest.md" %>
+
 
 
 

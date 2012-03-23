@@ -2,14 +2,6 @@ title: March Mobile Madness Hackathon
 
 !SLIDE
 
-## Welcome
-
-!SLIDE
-
-<%= include "../shared/monica.md" %>
-
-!SLIDE
-
 ## Today's Schedule
 
 - 11:00 am -- Power up with Bagels and Coffee
@@ -19,6 +11,11 @@ title: March Mobile Madness Hackathon
 - 12:15 pm -- Hacking Starts. Mission: Build a solid and fun boilerplate application other developers can use to build rich mobile applications.
 - 04:30 pm -- Submit boilerplate apps to be judged
 - 04:45 pm -- Present your app to the world (5 minutes per presenter)
+
+!SLIDE
+
+<%= include "../shared/monica.md" %>
+
 
 !SLIDE
 

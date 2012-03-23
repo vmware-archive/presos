@@ -1,4 +1,4 @@
-## Cloud Foundry the First Open PaaS
+## About Cloud Foundry
 
 ![main](/img/Panel.png)
 

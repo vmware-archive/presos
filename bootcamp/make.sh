@@ -1,0 +1,1 @@
+slideshow -t deck.js.txt index.md -o ../output/public/bootcamp

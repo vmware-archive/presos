@@ -1,21 +1,19 @@
-title: Monica's Cloud Foundry Presos
-
+title: Cloud Foundry Presos
 
 !SLIDE
 
-## March Mobile Madness Hackathon
+## Monica Wilkinson
+
+### March Mobile Madness Hackathon
 - Date: March 25th, 2012
 - [Mobile Slides](/mobile/index.html)
 - [Slides](/mobile-alt/index.html)
 
-## Erlang Factory
-- Date: March 29th, 2012
+### Erlang Factory
+- Date: March 27th, 2012
 - [Slides](/erlang/index.html)
 
-
-!SLIDE
-
-## Open Tour - Ruby
+### Open Tour - Ruby
 - Dates:
   - March 30th, 2012  @ San Francisco
   - April 2nd, 2012 @ Portland
@@ -23,11 +21,11 @@ title: Monica's Cloud Foundry Presos
   - Apring 9th 2012 @ Washington
 - [Slides](/ruby/index.html)
 
-## Open Tour - Bootcamp
+### Open Tour - Bootcamp
 - April 2nd, 2012 @ Portland
 - [Slides](/bootcamp/index.html)
 
-## Open Tour - MongoDB
+### Open Tour - MongoDB
 - Dates:
   - April 2nd, 2012 @ Portland
   - May 4th, 2012 @ MongoSF
