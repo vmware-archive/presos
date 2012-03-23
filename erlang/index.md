@@ -28,3 +28,16 @@ title: Deploy Faster
 
 <%= include "../shared/micro.md" %>
 
+!SLIDE
+
+<%= include "../shared/runtimes.md" %>
+
+!SLIDE
+
+<%= include "../shared/frameworks.md" %>
+
+!SLIDE
+
+<%= include "../shared/services_list.md" %>
+
+!SLIDE

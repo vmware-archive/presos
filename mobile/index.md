@@ -41,6 +41,23 @@ title: March Mobile Madness Hackathon
 
 !SLIDE
 
+<%= include "../shared/micro.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes.md" %>
+
+!SLIDE
+
+<%= include "../shared/frameworks.md" %>
+
+!SLIDE
+
+<%= include "../shared/services_list.md" %>
+
+!SLIDE
+
+
 ## Rules
 
 - There will be up to 3 winning teams.

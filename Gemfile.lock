@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    RedCloth (4.2.9)
+    kramdown (0.13.5)
+    slideshow (1.0.0)
+      RedCloth (>= 4.2.9)
+      kramdown (>= 0.13.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  slideshow

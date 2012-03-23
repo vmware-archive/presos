@@ -2,7 +2,7 @@ title: Ruby Development on Cloud Foundry
 
 !SLIDE
 
-<%= include "../shared/monica.md" %>
+<%= include "../shared/patrick.md" %>
 
 !SLIDE
 
@@ -39,19 +39,13 @@ title: Ruby Development on Cloud Foundry
 
 !SLIDE
 
-## Services
-
-- MySQL 5.1
-- PostgreSQL 9.0
-- MongoDB 1.8
-- Redis 2.2
-- RabbitMQ 2.4
+<%= include "../shared/services_list.md" %>
 
 !SLIDE
 
 ## Auto Reconfiguration
 
-Until this feature was released, ruby developers had to add code to read at runtime the credentials for each service.
+Until this feature was released, Ruby web developers had to add code to read at runtime the credentials for each service.
 
 Gems like [cloudfoundry-env](https://github.com/cloudfoundry-samples/cloudfoundry-env) helped with this task but now thanks to code injection
 All connections against localhost are modified to access the proper service
@@ -60,17 +54,8 @@ All connections against localhost are modified to access the proper service
 
 !SLIDE
 
-## Service tunneling
 
-- The ability to access any service on Cloud Foundry as if it was running locally
-
-
-    gem install caldecott
-
-    vmc tunnel [service_name]
-
-
-TODO: Add MongoHub Screenshot
+<%= include "../shared/caldecott.md" %>
 
 !SLIDE
 

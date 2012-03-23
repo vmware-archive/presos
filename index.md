@@ -24,12 +24,12 @@ title: Cloud Foundry™ Presents
 ### Ruby Session SF
 - March 30th, 2012
 - [Event](http://opentour.cloudfoundry.com/2012/sanfrancisco)
-- [Slides](/ruby/index.html)
+- [Slides](/ci/index.html)
 
 ### Open Tour Portland
 - April 2nd, 2012
 - [Event](http://opentour.cloudfoundry.com/2012/portland)
-- [Ruby Slides](/ruby/index.html)
+- [Ruby Slides](/ci/index.html)
 - [Bootcamp Slides](/bootcamp/index.html)
 - [MongoDB Slides](/mongodb/index.html)
 
@@ -40,7 +40,7 @@ title: Cloud Foundry™ Presents
 ### Ruby Session Austin
 - April 5th, 2012
 - [Event](http://opentour.cloudfoundry.com/2012/austin)
-- [Slides](/ruby/index.html)
+- [Slides](/ci/index.html)
 
 ### Ruby Session Washington
 - April 9th 2012
@@ -59,6 +59,11 @@ title: Cloud Foundry™ Presents
 !SLIDE
 
 ## Patrick Chanezon
+
+### Ruby Session Shanghai, China
+- March 30th, 2012
+- [Event](http://opentour.cloudfoundry.com/2012/shanghai)
+- [Slides](/ruby/index.html)
 
 !SLIDE
 

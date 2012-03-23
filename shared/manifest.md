@@ -1,9 +1,10 @@
 ## Manifest
 
-- Easily detail all of the resources your application needs including
-- Services
-- Memory
-- Urls
+- Easily detail all of the resources your application needs to run including
+    - Services
+    - Memory
+    - Urls
+- Very simple yaml file
 
 ## Example
 
@@ -23,4 +24,4 @@
     mem: 128M
 
 
-- Requires 0.3.16.beta.1 or higher
+- *Requires 0.3.16.beta.1 or higher*
