@@ -2,61 +2,19 @@ title: Ruby Development on Cloud Foundry
 
 !SLIDE
 
-## Cloud Foundry the First Open PaaS
-
-![main](/img/Panel.png)
-
-- Multi Languages: Ruby, PHP, Python, Java, Javascript, Scala
-- Multi Frameworks: Rails, Sinatra, NodeJS, Spring, Grails, Lift
-- Multi Services: MongoDB, Redis, RabbitMQ, MySQL, PostreSQL
-- Multi Clouds: Infrastructure Independent
-- Open Source: [http://github.com/cloudfoundry](http://github.com/cloudfoundry)
-- Extensible !
+<%= include "../shared/monica.md" %>
 
 !SLIDE
 
-## Getting Started
-
-- Signup for account [https://my.cloudfoundry.com/signup/march_madness](https://my.cloudfoundry.com/signup/march_madness)
-- Find a good project to push. Checkout [http://github.com/cloudfoundry-samples](http://github.com/cloudfoundry-samples)
+<%= include "../shared/intro_paas.md" %>
 
 !SLIDE
 
-## VMC
-
-- Install the CLI for Cloud Foundry called VMC. Its packaged as a Ruby gem.
-
-<% code do %>
-    sudo gem install vmc
-<% end %>
-
-- Log into cloudfoundry.com or any other cloudfoundry instance
-
-<% code do %>
-    vmc target api.cloudfoundry.com
-    vmc login <username>
-<% end %>
-
-- Push the code to the cloud
-
-<% code do %>
-    vmc push --runtime=ruby19
-<% end %>
+<%= include "../shared/vmc.md" %>
 
 !SLIDE
 
-## Micro Cloud Foundry
-
-- Cloud on a stick. Alternative to local environment
-- Miniature version of platform running cloudfoundry.com
-- Supports offline mode
-  - Requires 0.3.16.beta.4 or higher.
-
-<% code do %>
-    vmc target api.<name>.cloudfoundry.me
-    vmc register <email>
-    vmc login <email>
-<% end %>
+<%= include "../shared/micro.md" %>
 
 !SLIDE
 

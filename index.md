@@ -1,6 +1,7 @@
 title: Monica's Cloud Foundry Presos
 
-# Schedule
+
+!SLIDE
 
 ## March Mobile Madness Hackathon
 - Date: March 25th, 2012
@@ -10,6 +11,9 @@ title: Monica's Cloud Foundry Presos
 ## Erlang Factory
 - Date: March 29th, 2012
 - [Slides](/erlang/index.html)
+
+
+!SLIDE
 
 ## Open Tour - Ruby
 - Dates:

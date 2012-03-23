@@ -2,23 +2,11 @@ title: March Mobile Madness Hackathon
 
 !SLIDE
 
-# Welcome
+## Welcome
 
 !SLIDE
 
-## About Me
-- Developer Advocate @ [Cloud Foundry](http://cloudfoundry.com)
-- 12 years software development experience
-- Last 5 years on the Social Web: MySpace, Facebook, Socialcast
-- Acquired by VMware and moved to Cloud Foundry team
-- Love working with developers and mobile
-- twitter : [@ciberch](http://twitter.com/ciberch)
-- email: [mwilkinson@vmware.com](mailto:mwilkinson@vmware.com)
-
-![main](/img/head2.jpg)
-
-    Loves the web and data portability.
-
+<%= include "../shared/monica.md" %>
 
 !SLIDE
 
@@ -34,23 +22,11 @@ title: March Mobile Madness Hackathon
 
 !SLIDE
 
-## Cloud Foundry the First Open PaaS
-
-![main](/img/Panel.png)
-
-- Multi Languages: Ruby, PHP, Python, Java, Javascript, Scala
-- Multi Frameworks: Rails, Sinatra, NodeJS, Spring, Grails, Lift
-- Multi Services: MongoDB, Redis, RabbitMQ, MySQL, PostreSQL
-- Multi Clouds: Infrastructure Independent
-- Open Source: [http://github.com/cloudfoundry](http://github.com/cloudfoundry)
-- Extensible !
+<%= include "../shared/intro_paas.md" %>
 
 !SLIDE
 
-## Getting Started
-
-- Signup for account [https://my.cloudfoundry.com/signup/march_madness](https://my.cloudfoundry.com/signup/march_madness)
-- Find a good project to push. Checkout [http://github.com/cloudfoundry-samples](http://github.com/cloudfoundry-samples)
+<%= include "../shared/started.md" %>
 
 ### Example
 
@@ -61,29 +37,9 @@ title: March Mobile Madness Hackathon
 
 !SLIDE
 
-## VMC
-
-- Install the CLI for Cloud Foundry called VMC. Its packaged as a Ruby gem.
-
-<% code do %>
-    sudo gem install vmc
-<% end %>
-
-- Log into cloudfoundry.com or any other cloudfoundry instance
-
-<% code do %>
-    vmc target api.cloudfoundry.com
-    vmc login <username>
-<% end %>
-
-- Push the code to the cloud
-
-<% code do %>
-    vmc push --runtime=node06
-<% end %>
+<%= include "../shared/vmc.md" %>
 
 !SLIDE
-
 
 ## Rules
 
