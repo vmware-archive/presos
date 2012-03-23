@@ -9,8 +9,11 @@ title: March Mobile Madness Hackathon
 - 11:35 am -- Mobile Development with Javascript and HTML 5
 - 12:05 pm -- Intros and organize into teams
 - 12:15 pm -- Hacking Starts. Mission: Build a solid and fun boilerplate application other developers can use to build rich mobile applications.
+- 01:00 pm -- Lunch
 - 04:30 pm -- Submit boilerplate apps to be judged
 - 04:45 pm -- Present your app to the world (5 minutes per presenter)
+
+![main](/img/morning-nom.jpg)
 
 !SLIDE
 
