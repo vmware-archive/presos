@@ -6,7 +6,7 @@ Feel free to fork and use.
 In order to use these slides you will need to
 
 ``` ruby
-gem install slideshow
+bundle install
 ```
 
 To read about the SlideShow gem go [here](http://slideshow.rubyforge.org/)
@@ -22,17 +22,10 @@ cd mobile
 ```
 
 Then generate as many slide sets as you want.
-
-I generated 2 sets one for mobile viewing:
+The make.sh script in each dir has the commands to use the slideshow script with the templates in this repo
 
 ``` bash
-slideshow -t ~/.slideshow/templates/monica/s6.txt index.md -o ../output/public/mobile
-```
-
-And one for desktop viewing:
-
-```
-slideshow -t deck.js.txt index.md -o ../output/public/mobile-alt
+./make.sh
 ```
 
 Finally you can push this app to Cloud Foundry for example

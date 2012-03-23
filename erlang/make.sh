@@ -1,1 +1,1 @@
-slideshow -t deck.js.txt index.md -o ../output/public/erlang
+slideshow -t ../templates/deck.js/deck.js.txt index.md -o ../output/public/erlang
