@@ -1,5 +1,7 @@
 title: Cloud Foundry™ Presents
 
+<%= google_analytics :code => 'UA-22181585-12' %>
+
 !SLIDE
 
 ## Patrick Chanezon

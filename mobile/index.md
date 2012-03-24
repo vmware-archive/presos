@@ -1,5 +1,7 @@
 title: March Mobile Madness Hackathon
 
+<%= google_analytics :code => 'UA-22181585-12' %>
+
 !SLIDE
 
 ## Today's Schedule

@@ -1,12 +1,55 @@
 title: Ruby Development on Cloud Foundry
 
+<%= google_analytics :code => 'UA-22181585-12' %>
+
 !SLIDE
 
 <%= include "../shared/us/patrick.md" %>
 
 !SLIDE
 
+## Childhood Dreams
+
+<% left do %>
+![main](/img/dreams-irobot.png)
+<% end %>
+
+<% right do %>
+![main](/img/asimov.png)
+<% end %>
+![main](/img/dreams-light.png)
+
+!SLIDE
+
+<%= include "../shared/motivation/moore_hw_only.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/moore_hw_only_2.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/agility.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/computing_trends.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/mobile.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/why_paas.md" %>
+
+!SLIDE
+
 <%= include "../shared/intro_paas.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/open_source.md" %>
 
 !SLIDE
 
