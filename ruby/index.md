@@ -43,12 +43,18 @@ title: Ruby Development on Cloud Foundry
 
 !SLIDE
 
-## Auto Reconfiguration
+## Service Runtime Configuration
 
-Until this feature was released, Ruby web developers had to add code to read at runtime the credentials for each service.
+Using gems like:
 
-Gems like [cloudfoundry-env](https://github.com/cloudfoundry-samples/cloudfoundry-env) helped with this task but now thanks to code injection
-All connections against localhost are modified to access the proper service
+- vmware's official --> [cf-runtime](https://github.com/cloudfoundry/vcap-ruby) or
+- Monica's --> [cloudfoundry-env](https://github.com/cloudfoundry-samples/cloudfoundry-env)
+
+You can read the runtime environment and connect to each service
+
+### Auto Reconfiguration
+If you only have one service you can let Cloud Foundry auto configure your connection.
+No need to change any code
 
 **It just works**
 

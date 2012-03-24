@@ -5,4 +5,5 @@ These are often background or asynchronous jobs that work on processing items of
 
 The standalone Ruby applications will support such worker libraries as **resque** or **delayed_jobs** 
 
+- Ability to run rake tasks directly from the console
 - Requires 0.3.16.beta.5 or higher.
