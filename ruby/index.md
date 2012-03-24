@@ -53,6 +53,10 @@ title: Ruby Development on Cloud Foundry
 
 !SLIDE
 
+<%= include "../shared/motivation/contributions.md" %>
+
+!SLIDE
+
 <%= include "../shared/vmc.md" %>
 
 !SLIDE
@@ -96,10 +100,9 @@ Using gems like:
 You can read the runtime environment and connect to each service
 
 ### Auto Reconfiguration
-If you only have one service you can let Cloud Foundry auto configure your connection.
-No need to change any code
-
-**It just works**
+- If you only have one service you can let Cloud Foundry auto configure your connection.
+- No need to change any code
+- **It just works**
 
 !SLIDE
 
@@ -107,14 +110,7 @@ No need to change any code
 
 !SLIDE
 
-## Rails Console
-
-
-    vmc rails-console [appname]
-
-- Requires 0.3.16.beta.3 or higher.
-
-TODO: Add screenshot
+<%= include "../shared/rails-console.md" %>
 
 !SLIDE
 

@@ -6,7 +6,7 @@
     - Urls
 - Very simple yaml file
 
-## Example
+### Example
 
     .:
     name: hello-sinatra
