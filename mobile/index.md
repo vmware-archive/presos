@@ -66,7 +66,15 @@ Build a solid and fun boilerplate application other developers can use to build 
 
 !SLIDE
 
+<% left do %>
 <%= include "../shared/motivation/agility.md" %>
+<% end %>
+
+<% right do %>
+![main](/img/agile.jpg)
+<% end %>
+
+<%= include "../shared/motivation/agility_sol.md" %>
 
 !SLIDE
 
@@ -122,6 +130,21 @@ Fork https://github.com/cloudfoundry-samples/node-activities-boilerplate
 !SLIDE
 
 <%= include "../shared/services_list.md" %>
+
+!SLIDE
+
+## To learn more
+
+- Visit [cloudfoundry.com](http://www.cloudfoundry.com)
+- Come to Developer Days at [Cloud Foundry Open Tour](http://opentour.cloudfoundry.com)
+- Read the documentation on [start.cloudfoundry.com](http://start.cloudfoundry.com)
+- Follow [@cloudfoundry](https://twitter.com/cloudfoundry) on Twitter
+- Like [Cloud Foundry on Facebook](http://facebook.com/cloudfoundry)
+
+OR
+
+- Email me [mwilkinson@vmware.com](mailto:mwilkinson@vmware.com)
+
 
 !SLIDE
 
