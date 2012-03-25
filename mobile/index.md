@@ -1,4 +1,4 @@
-title: March Mobile Madness Hackathon
+title: March Mobile Madness
 author: Monica Wilkinson
 
 !SLIDE
@@ -10,19 +10,14 @@ author: Monica Wilkinson
 - 11:35 am -- Mobile Development with Javascript and HTML 5
 - 12:05 pm -- Intros and organize into teams
 - 12:15 pm -- Hacking Starts.
-
-### Mission:
-Build a solid and fun boilerplate application other developers can use to build rich mobile applications.
-
+- 04:30 pm -- Submit boilerplate apps to be judged
+- 04:45 pm -- Present your app to the world (5 minutes per presenter)
+- 05:00 pm -- T-shirt give away for attendees
 <% end %>
 
 <% right do %>
 ![main](/img/morning-nom.jpg)
 <% end %>
-
-- 04:30 pm -- Submit boilerplate apps to be judged
-- 04:45 pm -- Present your app to the world (5 minutes per presenter)
-- 05:00 pm -- T-shirt give away for attendees
 
 !SLIDE
 
@@ -68,13 +63,13 @@ Build a solid and fun boilerplate application other developers can use to build 
 
 <% left do %>
 <%= include "../shared/motivation/agility.md" %>
+<%= include "../shared/motivation/agility_sol.md" %>
 <% end %>
 
 <% right do %>
 ![main](/img/agile.jpg)
 <% end %>
 
-<%= include "../shared/motivation/agility_sol.md" %>
 
 !SLIDE
 
@@ -101,7 +96,7 @@ Build a solid and fun boilerplate application other developers can use to build 
 
 ## Deploying a NodeJS App
 
-Fork https://github.com/cloudfoundry-samples/node-activities-boilerplate
+Fork [https://github.com/cloudfoundry-samples/node-activities-boilerplate](https://github.com/cloudfoundry-samples/node-activities-boilerplate)
 
     git clone https://github.com/<your_name>/node-activities-boilerplate
 
@@ -133,6 +128,10 @@ Fork https://github.com/cloudfoundry-samples/node-activities-boilerplate
 
 !SLIDE
 
+<%= include "../shared/services2.md" %>
+
+!SLIDE
+
 ## To learn more
 
 - Visit [cloudfoundry.com](http://www.cloudfoundry.com)
@@ -149,6 +148,9 @@ OR
 !SLIDE
 
 ## Contest Rules
+
+### Mission:
+Build a solid and fun boilerplate application other developers can use to build rich mobile applications.
 
 - There will be up to 3 winning teams.
 - Max members per team : 3

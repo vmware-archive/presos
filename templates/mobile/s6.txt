@@ -2,7 +2,7 @@
 #  Change as desired/needed
 #
 #  Questions? Comments?
-#  Send them along to the Free Web Slide Show Alternatives (S5, S6, S9 And Friends) Forum/Mailing List. 
+#  Send them along to the Free Web Slide Show Alternatives (S5, S6, S9 And Friends) Forum/Mailing List.
 #  http://groups.google.com/group/webslideshow
 
 __file__.html   slides.html.erb
@@ -10,15 +10,11 @@ __file__.css    style.css.erb
 
 # styles
 
-s6/projection.css
-s6/print.css
-s6/screen.css
+s6/rose.css
+s6/rose.min.css
 
 # javascript machinery
 
-s6/jquery.js
-s6/jquery.microsoft.js
-s6/jquery.slideshow.js
 
 # template for pdf generation
 # -- use html-to-pdf tool (such as wkhtmltopdf, prince, etc) to generate pdf

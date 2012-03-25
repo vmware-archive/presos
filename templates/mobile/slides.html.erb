@@ -6,6 +6,9 @@
 <meta name="generator" content="<%= @headers['generator'] %>">
 <meta name="author"    content="<%= @headers['author']%>" >
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+<style type="text/css">
+code {font-size: 13pt; color:#AF0}
+</style>
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
 </head>
@@ -21,11 +24,11 @@
     end
 %>
 <% @mobile_pages.each_with_index do |page, index| %>
-<div data-role='page' id='slide<%="#{index+1}"%>'  class="slide" next='#slide<%="#{index+2}" %>' prev='#slide<%="#{index}"%>'>
-  <div data-role='header'>
+<div data-role='page' data-theme='a' id='slide<%="#{index+1}"%>'  class="slide" next='#slide<%="#{index+2}" %>' prev='#slide<%="#{index}"%>'>
+  <div data-role='header' data-theme='d'>
     <h1><%= @headers['title'] %></h1>
     <a href='#slide<%="#{index}" %>' data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a>
-    <a data-role='button' href='#slide<%="#{index+2}" %>'>Next</a>
+    <a data-role='button' data-icon="forward" href='#slide<%="#{index+2}" %>'>Next</a>
   </div>
   <div data-role='content'>
     <%=  page  %>
