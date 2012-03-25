@@ -5,6 +5,8 @@
 - A/B testing
 - Clay shirky situational apps
 - Kent Beck, Usenix 2011 Talk, “Software G-Forces” change in software process when frequency grows
+
+### Solution
 - Cloud Platforms enables an Agile culture, driver for innovation
 - Scalability is built in the platforms
 - Can iterate faster

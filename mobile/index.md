@@ -1,37 +1,57 @@
 title: March Mobile Madness Hackathon
-
-<%= google_analytics :code => 'UA-22181585-12' %>
+author: Monica Wilkinson
 
 !SLIDE
 
+<% left do %>
 ## Today's Schedule
-
 - 11:00 am -- Power up with Bagels and Coffee
 - **11:05 am -- Intro to Cloud Foundry -- Presentation and Hands On Demo**
 - 11:35 am -- Mobile Development with Javascript and HTML 5
 - 12:05 pm -- Intros and organize into teams
-- 12:15 pm -- Hacking Starts. Mission: Build a solid and fun boilerplate application other developers can use to build rich mobile applications.
-- 01:00 pm -- Lunch
+- 12:15 pm -- Hacking Starts.
+
+### Mission:
+Build a solid and fun boilerplate application other developers can use to build rich mobile applications.
+
+<% end %>
+
+<% right do %>
+![main](/img/morning-nom.jpg)
+<% end %>
+
 - 04:30 pm -- Submit boilerplate apps to be judged
 - 04:45 pm -- Present your app to the world (5 minutes per presenter)
-
-![main](/img/morning-nom.jpg)
+- 05:00 pm -- T-shirt give away for attendees
 
 !SLIDE
 
+<% left do %>
 <%= include "../shared/us/monica.md" %>
+<% end %>
+
+<% right do %>
+![main](/img/head2.jpg)
+<% end %>
+
+
+    Loves the web and data portability.
+
+
+!SLIDE
+
+## Mobile Dreams
+
+- When I was a CSE student in Columbus, Ohio I always dreamt of having a **computer in my head**
+- Not only for the raw computing power but for the ability to harness the power and knowledge of my society via the Internet
+- That was in 98' and 99' very few people even had laptops
+
+![main](/img/brain-computer-inside.jpg)
 
 !SLIDE
 
 <%= include "../shared/motivation/moore_hw_only.md" %>
 
-!SLIDE
-
-<%= include "../shared/motivation/moore_hw_only_2.md" %>
-
-!SLIDE
-
-<%= include "../shared/motivation/agility.md" %>
 
 !SLIDE
 
@@ -40,6 +60,13 @@ title: March Mobile Madness Hackathon
 !SLIDE
 
 <%= include "../shared/motivation/mobile.md" %>
+
+
+### Software development speed needs to increase to keep up with demands
+
+!SLIDE
+
+<%= include "../shared/motivation/agility.md" %>
 
 !SLIDE
 
@@ -55,14 +82,26 @@ title: March Mobile Madness Hackathon
 
 !SLIDE
 
+<%= include "../shared/cfdotcom.md" %>
+
+!SLIDE
+
 <%= include "../shared/started.md" %>
 
-### Example
 
+!SLIDE
 
-    git clone https://github.com/ciberch/node-activities-boilerplate
+## Deploying a NodeJS App
+
+Fork https://github.com/cloudfoundry-samples/node-activities-boilerplate
+
+    git clone https://github.com/<your_name>/node-activities-boilerplate
 
     cd node-activities-boilerplate
+
+    npm install
+
+    vmc push
 
 !SLIDE
 
@@ -86,7 +125,6 @@ title: March Mobile Madness Hackathon
 
 !SLIDE
 
-
 ## Contest Rules
 
 - There will be up to 3 winning teams.
@@ -109,4 +147,6 @@ title: March Mobile Madness Hackathon
 !SLIDE
 ![main](/img/HackathonSmall.jpg)
 
-## Goodnight
+
+
+<%= google_analytics :code => 'UA-22181585-12' %>

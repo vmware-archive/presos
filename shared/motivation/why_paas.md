@@ -1,4 +1,4 @@
-## Platforms
+## Cloud Platforms
 
 - Raise the Unit of currency to be application & services instead of infrastructure
 - Google App Engine, Cloud Foundry, Joyent, Heroku, Stax (Cloudbees), Amazon elastic beanstalk, Microsoft Azure, AppFog

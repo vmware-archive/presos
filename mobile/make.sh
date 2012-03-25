@@ -1,2 +1,3 @@
-slideshow -t ../templates/deck.js/deck.js.txt index.md -o ../output/public/mobile-alt
-slideshow -t ../templates/mobile/s6.txt index.md -o ../output/public/mobile
+rm -rf ../output/public/mob;
+slideshow -t ../templates/deck.js/deck.js.txt index.md -o ../output/public/mob;
+slideshow -t ../templates/mobile/s6.txt index.md -o ../output/public/mobile;

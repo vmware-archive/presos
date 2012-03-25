@@ -1,12 +1,46 @@
 title: Cloud Foundry Bootcamp
 
+<%= google_analytics :code => 'UA-22181585-12' %>
+
 !SLIDE
 
 <%= include "../shared/us/monica.md" %>
 
 !SLIDE
 
+<%= include "../shared/motivation/moore_hw_only.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/moore_hw_only_2.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/agility.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/computing_trends.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/mobile.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/why_paas.md" %>
+
+!SLIDE
+
 <%= include "../shared/intro_paas.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/open_source.md" %>
+
+!SLIDE
+
+<%= include "../shared/motivation/contributions.md" %>
 
 !SLIDE
 
@@ -30,33 +64,11 @@ title: Cloud Foundry Bootcamp
 
 !SLIDE
 
-## Auto Reconfiguration
-
-Until this feature was released, ruby developers had to add code to read at runtime the credentials for each service.
-
-Gems like [cloudfoundry-env](https://github.com/cloudfoundry-samples/cloudfoundry-env) helped with this task but now thanks to code injection
-All connections against localhost are modified to access the proper service
-
-**It just works**
+<%= include "../shared/ruby_service_config.md" %>
 
 !SLIDE
 
 <%= include "../shared/caldecott.md" %>
-
-!SLIDE
-
-## Rails Console
-
-
-    vmc rails-console [appname]
-
-- Requires 0.3.16.beta.3 or higher.
-
-TODO: Add screenshot
-
-!SLIDE
-
-<%= include "../shared/standalone.md" %>
 
 !SLIDE
 

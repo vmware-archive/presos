@@ -14,3 +14,8 @@ Log into cloudfoundry.com or any other cloudfoundry instance
 Push the code to the cloud
 
     vmc push
+
+It is very easy to learn vmc. To get a list of all functions
+
+    vmc help
+

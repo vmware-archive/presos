@@ -22,7 +22,7 @@ title: Cloud Foundry™ Presents
 - PariSOMA, San Francisco
 - [Hackathon](http://www.meetup.com/Cloud-Foundry-Community-Meetup/events/51902052/)
 - [Mobile Slides](/mobile/index.html)
-- [Slides](/mobile-alt/index.html)
+- [Slides](/mob/index.html)
 
 ### *Erlang Factory*
 - Tuesday March 27th, 2012 4:00pm
