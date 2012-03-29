@@ -29,10 +29,6 @@ author: Monica Wilkinson
 ![main](/img/head2.jpg)
 <% end %>
 
-
-    Loves the web and data portability.
-
-
 !SLIDE
 
 ## Mobile Dreams
@@ -112,6 +108,22 @@ Fork [https://github.com/cloudfoundry-samples/node-activities-boilerplate](https
 
 !SLIDE
 
+<%= include "../shared/push.md" %>
+
+!SLIDE
+
+<%= include "../shared/core_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/update_apps_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc_tips.md" %>
+
+!SLIDE
+
 <%= include "../shared/micro.md" %>
 
 !SLIDE
@@ -152,8 +164,8 @@ OR
 ### Mission:
 Build a solid and fun boilerplate application other developers can use to build rich mobile applications.
 
-- There will be up to 3 winning teams.
-- Max members per team : 3
+- There will be up to 4 winning teams.
+- Max members per team: 4
 - Unlimited apps can be submitted per person.
 - You can start working on this project now.
 - App pitches will be recorded so Cloud Foundry product can review on Monday
@@ -172,6 +184,9 @@ Build a solid and fun boilerplate application other developers can use to build 
 !SLIDE
 ![main](/img/HackathonSmall.jpg)
 
+### Submit github repo links for apps to [mwilkinson@vmware.com](mailto:mwilkinson@vmware.com)
+
+### Final Deadline Thu 03/29/2012 @ 10am
 
 
 <%= google_analytics :code => 'UA-22181585-12' %>

@@ -61,6 +61,22 @@ title: Ruby Development on Cloud Foundry
 
 !SLIDE
 
+<%= include "../shared/push.md" %>
+
+!SLIDE
+
+<%= include "../shared/core_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/update_apps_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc_tips.md" %>
+
+!SLIDE
+
 <%= include "../shared/micro.md" %>
 
 !SLIDE
@@ -87,6 +103,10 @@ title: Ruby Development on Cloud Foundry
 !SLIDE
 
 <%= include "../shared/services_list.md" %>
+
+!SLIDE
+
+<%= include "../shared/services2.md" %>
 
 !SLIDE
 

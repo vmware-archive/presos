@@ -4,7 +4,13 @@ title: Cloud Foundry Bootcamp
 
 !SLIDE
 
+<% left do %>
 <%= include "../shared/us/monica.md" %>
+<% end %>
+
+<% right do %>
+![main](/img/head2.jpg)
+<% end %>
 
 !SLIDE
 
@@ -61,6 +67,26 @@ title: Cloud Foundry Bootcamp
 !SLIDE
 
 <%= include "../shared/services_list.md" %>
+
+!SLIDE
+
+<%= include "../shared/services2.md" %>
+
+!SLIDE
+
+<%= include "../shared/push.md" %>
+
+!SLIDE
+
+<%= include "../shared/core_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/update_apps_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc_tips.md" %>
 
 !SLIDE
 

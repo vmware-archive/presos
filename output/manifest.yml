@@ -1,11 +1,11 @@
---- 
-applications: 
-  .: 
+---
+applications:
+  .:
     name: studios
     url: ${name}.${target-base}
-    framework: 
+    framework:
       name: sinatra
-      info: 
+      info:
         mem: 128M
         description: Sinatra Application
         exec: ruby app.rb
