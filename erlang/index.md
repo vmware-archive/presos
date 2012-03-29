@@ -123,5 +123,109 @@ title: Deploy Applications Faster
 
 !SLIDE
 
+## Erlang in Cloud Foundry ##
 
+### From Here - the Language Support deep-dive:
+- What does CloudFoundry provide to tenant languages?
+- What must a language do to fit into CloudFoundry?
+- How does Erlang work as a part of CloudFoundry?
 
+!SLIDE
+
+## What can the platform do for me? ##
+
+!SLIDE
+
+## Platform Features ##
+
+### HTTP Routing ###
+
+!SLIDE
+
+## Platform Features ##
+
+### Application Distribution ###
+
+!SLIDE
+
+## Platform Features ##
+
+### Service Binding ###
+
+!SLIDE
+
+## Platform Features ##
+
+### Management ###
+
+!SLIDE
+
+## What can I do for the platform? ##
+
+!SLIDE
+
+## Tenant Requirements ##
+
+### Run as a process ###
+
+!SLIDE
+
+## Tenant Requirements ##
+
+### Respond to HTTP requests ###
+
+!SLIDE
+
+## Tenant Requirements ##
+
+### Die when I’m dead ###
+
+!SLIDE
+
+## Tenant Requirements ##
+
+### Handle being terminated abruptly ###
+
+(and brutally)
+
+!SLIDE
+
+## Tenant Requirements ##
+
+### Keep the binary small ###
+
+!SLIDE
+
+## That’s all good. But what about Erlang? ##
+
+!SLIDE
+
+## Erlang as a Tenant ##
+
+### Assumes OTP & Rebar ###
+
+!SLIDE
+
+## Erlang as a Tenant ##
+
+### Startup script in `bin/` ###
+
+!SLIDE
+
+## Erlang as a Tenant ##
+
+### Configuration file in `etc/` ###
+
+!SLIDE
+
+## Erlang as a Tenant ##
+
+### Compiled application code in `lib/` ###
+
+!SLIDE
+
+## Erlang as a Tenant ##
+
+### `VMC_APP_PORT` & `VCAP_SERVICES` ###
+
+!SLIDE
