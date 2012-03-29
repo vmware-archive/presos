@@ -1,4 +1,4 @@
-title: Deploy Applications Faster
+title: Cloud Foundry @ Erlang Factory
 
 !SLIDE
 
@@ -36,16 +36,6 @@ title: Deploy Applications Faster
 !SLIDE
 
 <%= include "../shared/motivation/moore_hw_only.md" %>
-
-
-!SLIDE
-
-<%= include "../shared/motivation/computing_trends.md" %>
-
-!SLIDE
-
-<%= include "../shared/motivation/mobile.md" %>
-
 
 ### Software development speed needs to increase to keep up with demands
 
@@ -130,102 +120,102 @@ title: Deploy Applications Faster
 - What must a language do to fit into CloudFoundry?
 - How does Erlang work as a part of CloudFoundry?
 
-!SLIDE
+!SLIDE vcenterH2
 
 ## What can the platform do for me? ##
 
-!SLIDE
+!SLIDE vcenter
 
 ## Platform Features ##
 
 ### HTTP Routing ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Platform Features ##
 
 ### Application Distribution ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Platform Features ##
 
 ### Service Binding ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Platform Features ##
 
 ### Management ###
 
-!SLIDE
+!SLIDE vcenterH2
 
 ## What can I do for the platform? ##
 
-!SLIDE
+!SLIDE vcenter
 
 ## Tenant Requirements ##
 
 ### Run as a process ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Tenant Requirements ##
 
 ### Respond to HTTP requests ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Tenant Requirements ##
 
 ### Die when I’m dead ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Tenant Requirements ##
 
 ### Handle being terminated abruptly ###
 
-(and brutally)
-
-!SLIDE
+!SLIDE vcenter
 
 ## Tenant Requirements ##
 
 ### Keep the binary small ###
 
-!SLIDE
+!SLIDE vcenterH2
 
 ## That’s all good. But what about Erlang? ##
 
-!SLIDE
+!SLIDE vcenter
 
 ## Erlang as a Tenant ##
 
 ### Assumes OTP & Rebar ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Erlang as a Tenant ##
 
 ### Startup script in `bin/` ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Erlang as a Tenant ##
 
 ### Configuration file in `etc/` ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Erlang as a Tenant ##
 
 ### Compiled application code in `lib/` ###
 
-!SLIDE
+!SLIDE vcenter
 
 ## Erlang as a Tenant ##
 
 ### `VMC_APP_PORT` & `VCAP_SERVICES` ###
 
-!SLIDE
+!SLIDE vcenterH2
+
+## Demo

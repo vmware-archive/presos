@@ -40,7 +40,7 @@
 
 <!-- note: assumes no header (breaking slides w/ SLIDE directive) -->
 <% @slides.each_with_index do |slide,i| %>
-  <section class="slide" id="<%= (i+2).to_s %>">
+  <section class='slide <%= slide.classes %>' id="<%= (i+2).to_s %>" >
     <%= slide.content %>
   </section>
 <% end %>

@@ -7,6 +7,17 @@
 .deck-container .slide {
   background: #000;
 }
+
+.deck-container .slide.vcenterH2 h2, .deck-container .slide.vcenter h3 {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    font-size: 3em;
+    width: 100%;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
 .deck-container h1 {
   color: #0af;
   font-weight: normal;
