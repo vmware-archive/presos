@@ -12,6 +12,21 @@ title: Cloud Foundry @ Erlang Factory
 
 !SLIDE
 
+## About Paul
+
+- Founder at 23wide, Senior Developer at LShift
+- Worked for companies both large and very small
+- Generalist across as many languages as opportunity allows
+- Tries to select the right tools for the right job
+
+### Contact Info
+
+Twitter : [@paulrojo](http://twitter.com/paulrojo)
+
+Email: [paul@23wide.com](mailto:paul@23wide.com)
+
+!SLIDE
+
     How Cloud Foundry, the first Open PaaS, can help you deploy apps faster
     and experiment with new technologies.
 
@@ -66,50 +81,6 @@ title: Cloud Foundry @ Erlang Factory
 !SLIDE
 
 <%= include "../shared/cfdotcom.md" %>
-
-!SLIDE
-
-<%= include "../shared/started.md" %>
-
-!SLIDE
-
-<%= include "../shared/vmc.md" %>
-
-!SLIDE
-
-<%= include "../shared/push.md" %>
-
-!SLIDE
-
-<%= include "../shared/core_vmc.md" %>
-
-!SLIDE
-
-<%= include "../shared/update_apps_vmc.md" %>
-
-!SLIDE
-
-<%= include "../shared/vmc_tips.md" %>
-
-!SLIDE
-
-<%= include "../shared/micro.md" %>
-
-!SLIDE
-
-<%= include "../shared/runtimes.md" %>
-
-!SLIDE
-
-<%= include "../shared/frameworks.md" %>
-
-!SLIDE
-
-<%= include "../shared/services_list.md" %>
-
-!SLIDE
-
-<%= include "../shared/services2.md" %>
 
 !SLIDE
 
@@ -218,4 +189,52 @@ title: Cloud Foundry @ Erlang Factory
 
 !SLIDE vcenterH2
 
-## Demo
+## Cloud Foundry In Action
+
+!SLIDE
+
+<%= include "../shared/started.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/push.md" %>
+
+!SLIDE
+
+<%= include "../shared/core_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/update_apps_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc_tips.md" %>
+
+!SLIDE
+
+<%= include "../shared/micro.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes.md" %>
+
+!SLIDE
+
+<%= include "../shared/frameworks.md" %>
+
+!SLIDE
+
+<%= include "../shared/services_list.md" %>
+
+!SLIDE
+
+<%= include "../shared/services2.md" %>
+
+!SLIDE vcenterH2
+
+## Erlang Demo

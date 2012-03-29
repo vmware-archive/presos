@@ -1,14 +1,9 @@
 ## About Monica
 
-Developer Advocate @ [Cloud Foundry](http://cloudfoundry.com)
-
-### 12 years in software development
-
-### Last 5 years on the Social Web: MySpace, Facebook, Socialcast
-
-### Enjoys working with developers and customers
-
-
+- Developer Advocate @ [Cloud Foundry](http://cloudfoundry.com)
+- 12 years in software development
+- Last 5 years on the Social Web: MySpace, Facebook, Socialcast
+- Enjoys working with developers and customers
 
     Loves the web and data portability.
 
