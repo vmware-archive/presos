@@ -1,6 +1,6 @@
 ## Try VMC now
 
-### Fork the repo on [GitHub](https://github.com/ciberch/sinatra-cloudfoundry-basic-website)
+### Fork the [sinatra-cloudfoundry-basic-website](https://github.com/ciberch/sinatra-cloudfoundry-basic-website) repo on GitHub
 
 ### Clone it to your machine
 
@@ -13,4 +13,4 @@
 
 ### Push the application
 
-    vmc push
+    vmc push --runtime=ruby19

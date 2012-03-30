@@ -27,17 +27,18 @@ title: Ruby Apps on Cloud Foundry
 
 ## Getting Your Hands Dirty
 
-!SLIDE vcenter
-
-## Follow along
-
-### [Ruby Apps Slides](http://studios.cloudfoundry.com/ci/index.html)
 
 !SLIDE vcenter
 
 ## WiFi
 
 ### `westinsf_conf` Username:`bootcamp12` Password:`westin12`
+
+!SLIDE vcenter
+
+## Follow along
+
+### [Ruby Apps Slides](http://studios.cloudfoundry.com/ci/index.html)
 
 !SLIDE
 
@@ -81,6 +82,10 @@ title: Ruby Apps on Cloud Foundry
 !SLIDE
 
 <%= include "../shared/update_apps_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc_stats_try.md" %>
 
 !SLIDE
 
