@@ -27,9 +27,6 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 
 !SLIDE
 
-    How Cloud Foundry, the first Open PaaS, can help you deploy apps faster
-    and experiment with new technologies.
-
 ## Agenda
 
 - Why do we need a PaaS ?
@@ -37,6 +34,10 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 - How to deploy and scale apps on Cloud Foundry
 - How to bind application services
 - Adding Erlang to Cloud Foundry
+
+!SLIDE vcenterH2
+
+## How Cloud Foundry, the first Open PaaS, can help you deploy apps faster and experiment with new technologies.
 
 !SLIDE
 
@@ -201,7 +202,12 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 
 !SLIDE
 
+<%= include "../shared/vmc_try.md" %>
+
+!SLIDE
+
 <%= include "../shared/push.md" %>
+
 
 !SLIDE
 
@@ -225,6 +231,10 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 
 !SLIDE
 
+<%= include "../shared/runtimes2.md" %>
+
+!SLIDE
+
 <%= include "../shared/frameworks.md" %>
 
 !SLIDE
@@ -233,7 +243,23 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 
 !SLIDE
 
-<%= include "../shared/services2.md" %>
+<%= include "../shared/mysql.md" %>
+
+!SLIDE
+
+<%= include "../shared/postgre.md" %>
+
+!SLIDE
+
+<%= include "../shared/mongodb.md" %>
+
+!SLIDE
+
+<%= include "../shared/redis.md" %>
+
+!SLIDE
+
+<%= include "../shared/rabbitmq.md" %>
 
 !SLIDE vcenterH2
 

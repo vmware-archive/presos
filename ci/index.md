@@ -1,4 +1,4 @@
-title: Ruby Production Apps on Cloud Foundry
+title: Ruby Apps on Cloud Foundry
 
 !SLIDE
 
@@ -9,20 +9,6 @@ title: Ruby Production Apps on Cloud Foundry
 <% right do %>
 ![main](/img/head2.jpg)
 <% end %>
-
-!SLIDE
-
-## Agenda
-
-    How to use Cloud Foundry for end to end Continuous Delivery of Production Ruby Web Apps
-
-### Cloud Foundry Intro
-
-### VMC gem
-
-### Ruby Web Applications
-
-### Using Cloud Foundry for Continuous Delivery
 
 !SLIDE
 
@@ -44,9 +30,25 @@ title: Ruby Production Apps on Cloud Foundry
 
 <%= include "../shared/started.md" %>
 
+!SLIDE vcenterH2
+
+## Tour Cloud Foundry via VMC
+
 !SLIDE
 
 <%= include "../shared/vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes2.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc_try.md" %>
 
 !SLIDE
 
@@ -62,65 +64,7 @@ title: Ruby Production Apps on Cloud Foundry
 
 !SLIDE
 
-<%= include "../shared/vmc_tips.md" %>
-
-!SLIDE
-
-## VMC gem
-
-- Since VMC is a gem it can be used by any Ruby Application
-- VMC commands work against any Cloud Foundry instance because they all offer the same REST API
-
-### Using gem to log in users
-
-    require "vmc/client"
-
-    post "/login" do
-        email = params[:email]
-        password = params[:password]
-
-        if (email and password)
-          @vmcclient = VMC::Client.new(@target)
-          begin
-            @vmcclient.login(email, password)
-            # Never store user name and password
-            session[:auth_token] = @vmcclient.auth_token
-            session[:email] = email
-            session[:failed_attempts] = 0
-          rescue Exception => ex
-            @logger.error("Failed logging in #{session[:failed_attempts]} times")
-            session[:flash_error] =  "Login Failed"
-          end
-        else
-          session[:flash_error] = "Fill out the form"
-        end
-        redirect_to_main_page
-      end
-
-    get "/apps" do
-        @vmcclient = VMC::Client.new(@target, session[:auth_token])
-    end
-
-!SLIDE
-
-## Ruby Support
-
-### Runtimes
-- Ruby 1.8.7
-- Ruby 1.9.2
-
-### Frameworks
-- Sinatra
-- Rails
-
-!SLIDE
-
-## New framework Support
-- Rails 3.1 and 3.2 applications are now well-supported on CloudFoundry.com. 
-- JRuby
-- Rack Applications - Applications written with Rack, a modular Ruby web server interface, are now supported. 
-  - Cloud Foundry's VMC will automatically recognize a config.ru Rackup file and use it to run your web application. 
-  - The auto-reconfiguration feature is also supported for rack applications
+<%= include "../shared/vmc_services.md" %>
 
 !SLIDE
 
@@ -128,7 +72,93 @@ title: Ruby Production Apps on Cloud Foundry
 
 !SLIDE
 
-<%= include "../shared/services2.md" %>
+<%= include "../shared/mysql.md" %>
+
+!SLIDE
+
+<%= include "../shared/postgre.md" %>
+
+!SLIDE
+
+<%= include "../shared/mongodb.md" %>
+
+!SLIDE
+
+<%= include "../shared/redis.md" %>
+
+!SLIDE
+
+<%= include "../shared/rabbitmq.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc_services_try.md" %>
+
+
+!SLIDE
+
+<%= include "../shared/vmc_tips.md" %>
+
+!SLIDE vcenterH2
+
+## Ruby Support
+
+!SLIDE
+
+## VMC is a gem
+
+### VMC can be used by *any* Ruby Application
+
+### VMC commands work against *any* Cloud Foundry instance
+
+    Gemfile
+
+    source "http://rubygems.org"
+
+    gem "sinatra"
+    gem "shotgun"
+    gem "json", "~> 1.4.6", :require => "json/pure"
+    gem "haml"
+    gem "vmc", "~> 0.3.16.beta.5"
+
+`gem "vmc"`
+
+!SLIDE
+
+## Using VMC from Sinatra
+
+At the top of your app.rb include `require "vmc/client"`
+
+You can then use `VMC::Client`
+
+## Example
+
+    get "/apps" do
+        @vmcclient = VMC::Client.new(@target, @token)
+        @apps = @vmcclient.apps
+        haml :apps
+    end
+
+!SLIDE
+
+## Ruby Web Frameworks
+
+### Sinatra
+
+- Detection of Sinatra apps via `require 'sinatra'`
+- Runs on Thin or Webrick
+
+### Rails
+
+- Supports 3.0, 3.1 and 3.2
+- Runs on Thin or Webrick
+- Detection of Rails apps via presence of `config/environment.rb`
+
+
+### Rack
+
+- Detection via `config.ru`
+- No web server added
 
 !SLIDE
 
@@ -158,11 +188,15 @@ All connections against localhost are modified to access the proper service
 
 <%= include "../shared/manifest.md" %>
 
+!SLIDE vcenter
+
 ## Continuous Delivery
 
-- Don't put off automating deployments of your applications
+### Don't put off automating deployments of your applications
 
-### Many benefits
+!SLIDE
+
+## Benefits CI
 - Sane iterations
 - Saves time
 - Reduces chance of human errors

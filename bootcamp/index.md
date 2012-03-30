@@ -54,23 +54,7 @@ title: Cloud Foundry Bootcamp
 
 !SLIDE
 
-<%= include "../shared/micro.md" %>
-
-!SLIDE
-
-<%= include "../shared/runtimes.md" %>
-
-!SLIDE
-
-<%= include "../shared/frameworks.md" %>
-
-!SLIDE
-
-<%= include "../shared/services_list.md" %>
-
-!SLIDE
-
-<%= include "../shared/services2.md" %>
+<%= include "../shared/vmc_try.md" %>
 
 !SLIDE
 
@@ -101,7 +85,45 @@ title: Cloud Foundry Bootcamp
 <%= include "../shared/manifest.md" %>
 
 
+!SLIDE
 
+<%= include "../shared/micro.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes2.md" %>
+
+!SLIDE
+
+<%= include "../shared/frameworks.md" %>
+
+!SLIDE
+
+<%= include "../shared/services_list.md" %>
+
+!SLIDE
+
+<%= include "../shared/mysql.md" %>
+
+!SLIDE
+
+<%= include "../shared/postgre.md" %>
+
+!SLIDE
+
+<%= include "../shared/mongodb.md" %>
+
+!SLIDE
+
+<%= include "../shared/redis.md" %>
+
+!SLIDE
+
+<%= include "../shared/rabbitmq.md" %>
 
 
 

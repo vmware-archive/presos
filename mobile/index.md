@@ -112,11 +112,20 @@ Fork [https://github.com/cloudfoundry-samples/node-activities-boilerplate](https
 
 !SLIDE
 
+<%= include "../shared/vmc_try.md" %>
+
+
+!SLIDE
+
 <%= include "../shared/core_vmc.md" %>
 
 !SLIDE
 
 <%= include "../shared/update_apps_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc_stats_try.md" %>
 
 !SLIDE
 
@@ -132,6 +141,10 @@ Fork [https://github.com/cloudfoundry-samples/node-activities-boilerplate](https
 
 !SLIDE
 
+<%= include "../shared/runtimes2.md" %>
+
+!SLIDE
+
 <%= include "../shared/frameworks.md" %>
 
 !SLIDE
@@ -140,7 +153,23 @@ Fork [https://github.com/cloudfoundry-samples/node-activities-boilerplate](https
 
 !SLIDE
 
-<%= include "../shared/services2.md" %>
+<%= include "../shared/mysql.md" %>
+
+!SLIDE
+
+<%= include "../shared/postgre.md" %>
+
+!SLIDE
+
+<%= include "../shared/mongodb.md" %>
+
+!SLIDE
+
+<%= include "../shared/redis.md" %>
+
+!SLIDE
+
+<%= include "../shared/rabbitmq.md" %>
 
 !SLIDE
 
