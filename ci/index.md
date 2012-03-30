@@ -18,17 +18,37 @@ title: Ruby Apps on Cloud Foundry
 
 <%= include "../shared/motivation/open_source.md" %>
 
-!SLIDE
-
-<%= include "../shared/motivation/contributions.md" %>
 
 !SLIDE
 
 <%= include "../shared/cfdotcom.md" %>
 
+!SLIDE vcenterH2
+
+## Getting Your Hands Dirty
+
+!SLIDE vcenter
+
+## Follow along
+
+### [Ruby Apps Slides](http://studios.cloudfoundry.com/ci/index.html)
+
+!SLIDE vcenter
+
+## WiFi
+
+### `westinsf_conf` Username:`bootcamp12` Password:`westin12`
+
 !SLIDE
 
 <%= include "../shared/started.md" %>
+
+!SLIDE vcenter
+
+## Signup Promo Code
+
+
+### [`CFOpenTour2012`](https://my.cloudfoundry.com/signup/CFOpenTour2012)
 
 !SLIDE vcenterH2
 
