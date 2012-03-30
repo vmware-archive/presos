@@ -162,23 +162,23 @@ You can then use `VMC::Client`
 
 !SLIDE
 
-## Auto Reconfiguration
-
-Until this feature was released, Ruby web developers had to add code to read at runtime the credentials for each service.
-
-Gems like [cloudfoundry-env](https://github.com/cloudfoundry-samples/cloudfoundry-env) helped with this task but now thanks to code injection
-All connections against localhost are modified to access the proper service
-
-**It just works**
+<%= include "../shared/autoreconfig.md" %>
 
 !SLIDE
-
 
 <%= include "../shared/caldecott.md" %>
 
 !SLIDE
 
+<%= include "../shared/caldecott2.md" %>
+
+!SLIDE
+
 <%= include "../shared/rails-console.md" %>
+
+!SLIDE
+
+<%= include "../shared/rails-console2.md" %>
 
 !SLIDE
 
@@ -202,6 +202,8 @@ All connections against localhost are modified to access the proper service
 - Reduces chance of human errors
 - Customers get changes sooner and can provide feedback sooner
 
+!SLIDE
+
 ## Cloud Foundry Codebase
 
 - Most of the codebase is Open Source
@@ -210,7 +212,9 @@ All connections against localhost are modified to access the proper service
 - Once changes are approved, merged and tested by Jenkins they get pushed to GitHub
 - GitHub is better than Gerrit for code browsing
 
-## Continuous Delivery for www.cloudfoundry.com
+!SLIDE
+
+## Continuous Delivery for `www`
 
 - Using post commit hooks on GitHub.com
 - Notify deployer app
@@ -218,20 +222,52 @@ All connections against localhost are modified to access the proper service
 - Manual verification
 - Push to Cloud Foundry production
 
+!SLIDE
+
 ## Avoiding downtime when you push
 
-- Lets say you want this `my-great-app.cloudfoundry.com` to be the main url for your app
-- Create 2 production apps: Example:
+Lets say you want this `my-great-app.cloudfoundry.com` to be the main url for your app
 
-    my-great-app1.cloudfoundry.com
-    my-great-app2.cloudfoundry.com
+### First, create 2 production apps:
 
-- Toggle which app is live
-- App which is stopped receives the next push
-- Once push is made, app is brought up but not mapped to main url
-- Once sanity tests are done, app gets mapped to main url
-- Old app gets unmapped from main url
-- Old app gets stopped
+    vmc push --url my-great-app1.cloudfoundry.com
+
+    vmc push --url my-great-app2.cloudfoundry.com --nostart
+
+### Only start one app and bind it to production url
+
+    vmc map my-great-app1 my-great-app.cloudfoundry.com
+
+!SLIDE
+
+## To deploy
+
+App which is stopped receives the next push and is made alive.
+
+    vmc update my-great-app2
+    vmc start my-great-app2
+
+Once sanity tests are done, toggle
+
+    vmc map my-great-app2 my-great-app.cloudfoundry.com
+    vmc unmap my-great-app1 my-great-app.cloudfoundry.com
+
+Old app gets stopped
+
+    vmc stop my-great-app1
+
+!SLIDE
+
+## No downtime
+
+### However
+
+- No breaking changes in schema if app uses a database
+- Sessions will get killed on push
+
+!SLIDE vcenterH2
+
+## Questions ?
 
 
 
