@@ -27,7 +27,6 @@ title: Ruby Apps on Cloud Foundry
 
 ## Getting Your Hands Dirty
 
-
 !SLIDE vcenter
 
 ## WiFi
@@ -38,7 +37,7 @@ title: Ruby Apps on Cloud Foundry
 
 ## Follow along
 
-### [Ruby Apps Slides](http://studios.cloudfoundry.com/ci/index.html)
+### [http://studios.cloudfoundry.com/ci](http://studios.cloudfoundry.com/ci/index.html)
 
 !SLIDE
 
@@ -50,6 +49,15 @@ title: Ruby Apps on Cloud Foundry
 
 
 ### [`CFOpenTour2012`](https://my.cloudfoundry.com/signup/CFOpenTour2012)
+
+!SLIDE
+
+## Assumptions for Demos
+
+### You have [RVM](http://beginrescueend.com/) installed
+
+### You have Ruby `1.9.2` available
+
 
 !SLIDE vcenterH2
 
@@ -191,14 +199,6 @@ You can then use `VMC::Client`
 
 !SLIDE
 
-<%= include "../shared/caldecott.md" %>
-
-!SLIDE
-
-<%= include "../shared/caldecott2.md" %>
-
-!SLIDE
-
 <%= include "../shared/rails-console.md" %>
 
 !SLIDE
@@ -207,45 +207,94 @@ You can then use `VMC::Client`
 
 !SLIDE
 
-<%= include "../shared/standalone.md" %>
+<%= include "../shared/caldecott.md" %>
+
+!SLIDE
+
+<%= include "../shared/caldecott2.md" %>
 
 !SLIDE
 
 <%= include "../shared/manifest.md" %>
 
-!SLIDE vcenter
+!SLIDE
+
+## Try it now
+
+### Delete the application
+
+### Edit `manifest.yml` changing memory and name of service
+
+    ---
+    applications:
+      .:
+        framework:
+          name: rails3
+          info:
+            mem: 128M
+            description: Rails Application
+            exec:
+        mem: 128M
+        instances: 1
+        services:
+          mysql-blog:
+            type: mysql
+
+### Push app again
+
+    vmc push
+
+!SLIDE
+
+<%= include "../shared/standalone.md" %>
+
+!SLIDE vcenterH2
+
+## Demo Resque
+
+!SLIDE vcenterH2
+
+## Demo Elastic Search
+
+!SLIDE vcenterH2
 
 ## Continuous Delivery
-
-### Don't put off automating deployments of your applications
 
 !SLIDE
 
 ## Benefits CI
-- Sane iterations
-- Saves time
-- Reduces chance of human errors
-- Customers get changes sooner and can provide feedback sooner
+
+### Sane iterations
+
+### Saves time
+
+### Reduces chance of human errors
+
+### Customers get changes sooner and can provide feedback sooner
 
 !SLIDE
 
 ## Cloud Foundry Codebase
 
-- Most of the codebase is Open Source
-- A few internal projects for cloudfoundry.com are not
-- Engineering team likes using Gerrit for code reviews because you can easily approve or reject changes
-- Once changes are approved, merged and tested by Jenkins they get pushed to GitHub
-- GitHub is better than Gerrit for code browsing
+### Most of the codebase is Open Source
+
+### A few internal projects for cloudfoundry.com are not
+
+### Once changes are approved, merged and tested by Jenkins they get pushed to GitHub
 
 !SLIDE
 
 ## Continuous Delivery for `www`
 
-- Using post commit hooks on GitHub.com
-- Notify deployer app
-- Push to Cloud Foundry staging
-- Manual verification
-- Push to Cloud Foundry production
+### Using post commit hooks on GitHub.com
+
+### Notify deployer app
+
+### Push to Cloud Foundry staging
+
+### Manual verification
+
+### Push to Cloud Foundry production
 
 !SLIDE
 
@@ -289,6 +338,22 @@ Old app gets stopped
 
 - No breaking changes in schema if app uses a database
 - Sessions will get killed on push
+
+!SLIDE
+
+## Thanks !
+
+## Summary of what we did
+
+### Got up and running on `VMC`
+
+### Deployed and edited `Sinatra` app
+
+### Deployed `Rails` app with `MySQL` service
+
+### Saw new `standalone apps` in action with Resque and Elastic Search
+
+### Deploy apps with `no downtime`
 
 !SLIDE vcenterH2
 

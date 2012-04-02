@@ -1,6 +1,6 @@
 #####################
 # Sample Slide Show (S9) template package manifest using deck.js
-# - deck.js by Caleb Troughton (aka imakewebthings); see https://github.com/imakewebthings/deck.js 
+# - deck.js by Caleb Troughton (aka imakewebthings); see https://github.com/imakewebthings/deck.js
 #
 # Change as desired/needed
 #
@@ -25,6 +25,8 @@ core/deck.core.css
 
 
 # deck.js extensions
+
+extensions/jquery-1.6.4.min.js
 
 extensions/goto/deck.goto.js
 extensions/goto/deck.goto.css

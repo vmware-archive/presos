@@ -1,18 +1,17 @@
 ## Frameworks
-- [Sinatra](http://www.sinatrarb.com/intro): DSL for quickly creating web applications in Ruby with minimal effort:
 
-### myapp.rb
+### Sinatra
 
-    require 'sinatra'
+### Rails 3
 
-    get '/' do
-      'Hello world!'
-    end
+### Rack
 
-- Rails 3
-- Rack
-- Scala/Lift
-- NodeJS
-- Grails
-- Spring
-- Java Web
+###  Scala/Lift
+
+### NodeJS
+
+### Grails
+
+### Spring
+
+### Java Web

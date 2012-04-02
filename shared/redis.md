@@ -5,3 +5,5 @@
 - Keys can contain strings, hashes, lists, sets and sorted sets
 - Redis is Open Source
 - *Cloud Foundry Supports version 2.2*
+
+### Learn more at: [http://redis.io/](http://redis.io/)

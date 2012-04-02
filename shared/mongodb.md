@@ -7,3 +7,5 @@
 - Open Source
 - Great Community
 - *Cloud Foundry Supports version 1.8*
+
+### Learn more at: [http://www.mongodb.org/](http://www.mongodb.org/)

@@ -10,3 +10,5 @@
 ### To connect
 
     vmc tunnel <service_name>
+
+*Make sure you are using addressable 2.2.6*

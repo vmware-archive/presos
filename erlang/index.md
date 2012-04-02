@@ -35,10 +35,6 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 - How to bind application services
 - Adding Erlang to Cloud Foundry
 
-!SLIDE vcenterH2
-
-## How Cloud Foundry, the first Open PaaS, can help you deploy apps faster and experiment with new technologies.
-
 !SLIDE
 
 ## Mobile Dreams
@@ -77,11 +73,11 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 
 !SLIDE
 
-<%= include "../shared/motivation/open_source.md" %>
+<%= include "../shared/cfdotcom.md" %>
 
 !SLIDE
 
-<%= include "../shared/cfdotcom.md" %>
+<%= include "../shared/motivation/open_source.md" %>
 
 !SLIDE
 
@@ -192,9 +188,19 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 
 ## Cloud Foundry In Action
 
+!SLIDE vcenter
+
+## Follow Along
+
+### [http://studios.cloudfoundry.com/erlang](http://studios.cloudfoundry.com/erlang)
+
 !SLIDE
 
 <%= include "../shared/started.md" %>
+
+!SLIDE vcenterH2
+
+## Promo code: HACK
 
 !SLIDE
 
@@ -208,6 +214,17 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 
 <%= include "../shared/push.md" %>
 
+!SLIDE
+
+<%= include "../shared/runtimes.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes2.md" %>
+
+!SLIDE
+
+<%= include "../shared/frameworks.md" %>
 
 !SLIDE
 
@@ -225,17 +242,6 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 
 <%= include "../shared/micro.md" %>
 
-!SLIDE
-
-<%= include "../shared/runtimes.md" %>
-
-!SLIDE
-
-<%= include "../shared/runtimes2.md" %>
-
-!SLIDE
-
-<%= include "../shared/frameworks.md" %>
 
 !SLIDE
 
@@ -264,3 +270,13 @@ Email: [paul@23wide.com](mailto:paul@23wide.com)
 !SLIDE vcenterH2
 
 ## Erlang Demo
+
+!SLIDE vcenter
+
+## Slides
+
+### [http://studios.cloudfoundry.com/erlang](http://studios.cloudfoundry.com/erlang)
+
+!SLIDE vcenterH2
+
+## Questions ?
