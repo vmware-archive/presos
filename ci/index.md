@@ -31,7 +31,7 @@ title: Ruby Apps on Cloud Foundry
 
 ## WiFi
 
-### `westinsf_conf` Username:`bootcamp12` Password:`westin12`
+### enter wifi here
 
 !SLIDE vcenter
 
@@ -114,6 +114,8 @@ title: Ruby Apps on Cloud Foundry
 !SLIDE
 
 <%= include "../shared/mongodb.md" %>
+
+## Talk about MongoDB at 2:00pm
 
 !SLIDE
 
