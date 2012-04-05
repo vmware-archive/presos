@@ -31,7 +31,7 @@ title: Ruby Apps on Cloud Foundry
 
 ## WiFi
 
-### enter wifi here
+### `VMW` and password `vmware2012`
 
 !SLIDE vcenter
 
@@ -194,6 +194,17 @@ You can then use `VMC::Client`
 
 - Detection via `config.ru`
 - No web server added
+
+!SLIDE vcenter
+
+## Demo
+
+### A situational app
+
+
+!SLIDE vcenterH2
+
+## http://summerjobs.cloudfoundry.com/
 
 !SLIDE
 
