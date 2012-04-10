@@ -31,7 +31,7 @@ title: Ruby Apps on Cloud Foundry
 
 ## WiFi
 
-### `VMW` and password `vmware2012`
+### `Cloud Foundry Open Tour` and password `cloud`
 
 !SLIDE vcenter
 
@@ -362,9 +362,11 @@ Old app gets stopped
 
 ### Deployed and edited `Sinatra` app
 
+### Converted a Sinatra app to `Rack` and added Redis for caching
+
 ### Deployed `Rails` app with `MySQL` service
 
-### Saw new `standalone apps` in action with Resque and Elastic Search
+### Saw `redis` and `resque` in action with Standalone Apps
 
 ### Deploy apps with `no downtime`
 
