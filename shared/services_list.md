@@ -3,7 +3,7 @@
 ### On CloudFoundry.com and Micro Cloud Foundry
 
 - MySQL
-- PostrgeSQL
+- PostgreSQL
 - Redis
 - MongoDB
 - RabbitMQ
