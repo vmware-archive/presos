@@ -10,4 +10,5 @@ applications:
         description: Sinatra Application
         exec: ruby app.rb
     mem: 128M
+    runtime: ruby19
     instances: 1
