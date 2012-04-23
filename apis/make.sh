@@ -1,0 +1,3 @@
+slideshow -t ../templates/deck.js/deck.js.txt index.md -o ../output/public/apis;
+slideshow -t ../templates/mobile/s6.txt index.md -o ../output/public/apis/mobile;
+slideshow -t ../templates/s6/s6.txt index.md -o ../output/public/apis/pdf;
