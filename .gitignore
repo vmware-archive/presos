@@ -13,6 +13,6 @@ output/public/mob*
 output/public/mobile*
 output/public/mongodb*
 output/public/ruby*
-index.*
+output/public/index.*
 *.*~
 *~
