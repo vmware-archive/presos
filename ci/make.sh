@@ -1,3 +1,3 @@
 slideshow -t ../templates/deck.js/deck.js.txt index.md -o ../output/public/ci;
 slideshow -t ../templates/mobile/s6.txt index.md -o ../output/public/ci/mobile;
-slideshow index.md -o ../output/public/ci/pdf;
+slideshow -t ../templates/s6/s6.txt index.md -o ../output/public/ci/pdf;
