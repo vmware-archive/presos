@@ -179,9 +179,13 @@ https://gist.github.com/0ef4438e5b31c7b02c79
 
 ### Fetch related content
 
+## Demo App
+
 ### [http://friends.cloudfoundry.com/](http://friends.cloudfoundry.com/)
 
 ![main](/img/friends-summer-jobs.png)
+
+- Helps you find jobs for your friends
 
 !SLIDE
 
@@ -191,9 +195,13 @@ https://gist.github.com/0ef4438e5b31c7b02c79
 
 ### Perform actions on their behalf
 
+## Demo App
+
 ### [https://salesforce-demo.cloudfoundry.com](https://salesforce-demo.cloudfoundry.com)
 
 ![main](/img/austin-salesforce-cart.png)
+
+- Adds data to Salesforce instance from LinkedIn Companies
 
 !SLIDE vcenterH2
 
