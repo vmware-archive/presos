@@ -72,3 +72,10 @@ title: Cloud Foundry™ Presents
 - May 4th, 2012 @ MongoSF
 - [Slides](/mongodb/index.html)
 - MongoDB coming soon !
+
+!SLIDE
+
+## Jennifer Hickey
+
+### Open Tour 2012
+- [Cloud Foundry for Ruby Developers](/ruby-getting-started/index.html)
