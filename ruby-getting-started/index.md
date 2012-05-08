@@ -347,6 +347,18 @@ Use cf-runtime gem to make service connections or parse environment
 
 - http://www.cloudfoundry.com
 
+!SLIDE
+
+## Samples
+
+### [Sinatra Summer Jobs](http://github.com/jencompgeek/summer-jobs)
+
+### [Rails Website Prelaunch](https://github.com/cloudfoundry-samples/rails-prelaunch-signup)
+
+### [Resque](https://github.com/cloudfoundry-samples/resque-sample)
+
+### [Elastic Search with Rails](https://github.com/cloudfoundry-samples/rails-elastic-search)
+
 !SLIDE vcenterH2
 
 ## Questions ?
