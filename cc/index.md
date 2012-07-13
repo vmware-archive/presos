@@ -1,4 +1,4 @@
-title: Ruby Apps on Cloud Foundry
+title: Ruby for #ContributingCode
 
 !SLIDE
 
@@ -9,6 +9,13 @@ title: Ruby Apps on Cloud Foundry
 <% right do %>
 ![main](/img/head2.jpg)
 <% end %>
+
+
+!SLIDE vcenter
+
+## Follow along
+
+### [http://studios.cloudfoundry.com/cc](http://studios.cloudfoundry.com/cc/index.html)
 
 !SLIDE
 
@@ -23,41 +30,77 @@ title: Ruby Apps on Cloud Foundry
 
 <%= include "../shared/cfdotcom.md" %>
 
-!SLIDE vcenterH2
+!SLIDE
 
-## Getting Your Hands Dirty
+## Ruby is…
 
-!SLIDE vcenter
-
-## WiFi
-
-### `vmair`
-
-!SLIDE vcenter
-
-## Follow along
-
-### [http://studios.cloudfoundry.com/cc](http://studios.cloudfoundry.com/cc/index.html)
+- Dynamic
+- Open source programming language
+- Focus on simplicity and productivity.
+- Elegant syntax that is natural to read and easy to write.
 
 !SLIDE
 
-<%= include "../shared/started.md" %>
+## Ruby Syntax
 
-!SLIDE vcenter
+    # The Greeter class
+    class Greeter
+      def initialize(name)
+        @name = name.capitalize
+      end
 
-## Signup Promo Code
+      def salute
+        puts "Hello #{@name}!"
+      end
+    end
 
+    # Create a new object
+    g = Greeter.new("world")
 
-### [`ContributingCode`](https://my.cloudfoundry.com/signup/ContributingCode)
+    # Output "Hello World!"
+    g.salute
+
+More at http://www.ruby-lang.org/en/
 
 !SLIDE
+
+## Ruby Web Frameworks
+
+### Sinatra
+
+- Detection of Sinatra apps via `require 'sinatra'`
+- Runs on Thin or Webrick
+
+### Rack
+
+- Detection via `config.ru`
+- No web server added
+
+!SLIDE
+
+## Rails
+
+- Web Development Framework
+- MVC Architecture
+- Written in Ruby
+- Convention over Configuration
+- RESTful
+- Agile
+- Clean
+
+!SLIDE
+
+## Rails on Cloud Foundry
+
+- Supports 3.0, 3.1 and 3.2
+- Runs on Thin or Webrick
+- Detection of Rails apps via presence of `config/environment.rb`
+
+!SLIDE vcenter
 
 ## Assumptions for Demos
 
-### You have [RVM](http://beginrescueend.com/) installed
-
-### You have Ruby `1.9.2` available
-
+### You have [RVM](http://beginrescueend.com/) with Ruby `1.9.2` available
 
 !SLIDE vcenterH2
 
@@ -115,8 +158,6 @@ title: Ruby Apps on Cloud Foundry
 
 <%= include "../shared/mongodb.md" %>
 
-## Talk about MongoDB at 2:00pm
-
 !SLIDE
 
 <%= include "../shared/redis.md" %>
@@ -173,27 +214,6 @@ You can then use `VMC::Client`
         @apps = @vmcclient.apps
         haml :apps
     end
-
-!SLIDE
-
-## Ruby Web Frameworks
-
-### Sinatra
-
-- Detection of Sinatra apps via `require 'sinatra'`
-- Runs on Thin or Webrick
-
-### Rails
-
-- Supports 3.0, 3.1 and 3.2
-- Runs on Thin or Webrick
-- Detection of Rails apps via presence of `config/environment.rb`
-
-
-### Rack
-
-- Detection via `config.ru`
-- No web server added
 
 !SLIDE vcenter
 
