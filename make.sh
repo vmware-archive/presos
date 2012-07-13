@@ -4,6 +4,7 @@ slideshow index.md -o output/public/pdf;
 
 cd mobile; ./make.sh;
 cd ../ci; ./make.sh;
+cd ../cc; ./make.sh;
 cd ../ruby; ./make.sh;
 cd ../ruby-getting-started; ./make.sh;
 cd ../erlang; ./make.sh;
