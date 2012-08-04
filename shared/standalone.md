@@ -1,6 +1,6 @@
 ## Standalone applications 
 
-### `Coming Soon` to cloudfoundry.com
+### Available now on cloudfoundry.com
 
 ### - Normal system processes rather than deployed through an application or web server. 
 

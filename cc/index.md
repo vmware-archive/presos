@@ -102,10 +102,6 @@ More at http://www.ruby-lang.org/en/
 
 ### You have [RVM](http://beginrescueend.com/) with Ruby `1.9.2` available
 
-!SLIDE vcenterH2
-
-## Tour Cloud Foundry via VMC
-
 !SLIDE
 
 <%= include "../shared/vmc.md" %>
@@ -141,35 +137,6 @@ More at http://www.ruby-lang.org/en/
 !SLIDE
 
 <%= include "../shared/vmc_services.md" %>
-
-!SLIDE
-
-<%= include "../shared/services_list.md" %>
-
-!SLIDE
-
-<%= include "../shared/mysql.md" %>
-
-!SLIDE
-
-<%= include "../shared/postgre.md" %>
-
-!SLIDE
-
-<%= include "../shared/mongodb.md" %>
-
-!SLIDE
-
-<%= include "../shared/redis.md" %>
-
-!SLIDE
-
-<%= include "../shared/rabbitmq.md" %>
-
-!SLIDE
-
-<%= include "../shared/vmc_services_try.md" %>
-
 
 !SLIDE
 
@@ -238,17 +205,6 @@ You can then use `VMC::Client`
 
 <%= include "../shared/rails-console2.md" %>
 
-!SLIDE
-
-<%= include "../shared/caldecott.md" %>
-
-!SLIDE
-
-<%= include "../shared/caldecott2.md" %>
-
-!SLIDE
-
-<%= include "../shared/manifest.md" %>
 
 !SLIDE
 
@@ -281,118 +237,19 @@ You can then use `VMC::Client`
 
 <%= include "../shared/standalone.md" %>
 
-!SLIDE vcenterH2
-
-## Demo Resque
-
-!SLIDE vcenterH2
-
-## Demo Elastic Search
-
-!SLIDE vcenterH2
-
-## Continuous Delivery
-
 !SLIDE
 
-## Benefits CI
+## Another situational app
 
-### Sane iterations
+### [#ContributingCode App](http://contributingcode.cloudfoundry.com)
 
-### Saves time
-
-### Reduces chance of human errors
-
-### Customers get changes sooner and can provide feedback sooner
-
-!SLIDE
-
-## Cloud Foundry Codebase
-
-### Most of the codebase is Open Source
-
-### A few internal projects for cloudfoundry.com are not
-
-### Once changes are approved, merged and tested by Jenkins they get pushed to GitHub
-
-!SLIDE
-
-## Continuous Delivery for `www`
-
-### Using post commit hooks on GitHub.com
-
-### Notify deployer app
-
-### Push to Cloud Foundry staging
-
-### Manual verification
-
-### Push to Cloud Foundry production
-
-!SLIDE
-
-## Avoiding downtime when you push
-
-Lets say you want this `my-great-app.cloudfoundry.com` to be the main url for your app
-
-### First, create 2 production apps:
-
-    vmc push --url my-great-app1.cloudfoundry.com
-
-    vmc push --url my-great-app2.cloudfoundry.com --nostart
-
-### Only start one app and bind it to production url
-
-    vmc map my-great-app1 my-great-app.cloudfoundry.com
-
-!SLIDE
-
-## To deploy
-
-App which is stopped receives the next push and is made alive.
-
-    vmc update my-great-app2
-    vmc start my-great-app2
-
-Once sanity tests are done, toggle
-
-    vmc map my-great-app2 my-great-app.cloudfoundry.com
-    vmc unmap my-great-app1 my-great-app.cloudfoundry.com
-
-Old app gets stopped
-
-    vmc stop my-great-app1
-
-!SLIDE
-
-## No downtime
-
-### However
-
-- No breaking changes in schema if app uses a database
-- Sessions will get killed on push
+### [Code](https://github.com/cloudfoundry-samples/contributing-code-app)
 
 !SLIDE
 
 ## Thanks !
 
-## Summary of what we did
-
-### Got up and running on `VMC`
-
-### Deployed and edited `Sinatra` app
-
-### Converted a Sinatra app to `Rack` and added Redis for caching
-
-### Deployed `Rails` app with `MySQL` service
-
-### Saw `redis` and `resque` in action with Standalone Apps
-
-### Deploy apps with `no downtime`
-
-!SLIDE vcenterH2
-
-## Questions ?
+### Questions: @ciberch
 
 
 
