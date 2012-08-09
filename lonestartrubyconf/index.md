@@ -146,24 +146,15 @@ IaaS creation, management and orchestration
 
 ## High Level
 ￼￼
-
-### Clients (VMC, STS, Browser)
-
-### CF Kernel
-
-### Orchestrator
-
-### IaaS
-
-### Hardware - CPU/Memory/Disk/Network
+![main](/img/LSRC/overview-high-level.png)
 
 !SLIDE
 
 ## Basic Premises
 
-### Fail Fast
+### `Fail` Fast
 
-### Self Healing
+### Self-Healing
 
 ### Horizontally Scalable Components
 
@@ -177,12 +168,17 @@ IaaS creation, management and orchestration
 
 ## Basic Patterns
 
-- Event-Driven
-- Asynchronous
-- Non-blocking
-- Independent, Idempotent
-- Message Passing
-- Eventually Consistent
+### Event-Driven
+
+### Asynchronous
+
+### Non-blocking
+
+### Independent, Idempotent
+
+### Message Passing
+
+### Eventually Consistent
 
 !SLIDE
 
@@ -190,38 +186,50 @@ IaaS creation, management and orchestration
 
 ### All components loosely coupled
 
-- Few “Classes”, many “Instances”
-- Messaging as foundation
-- Addressing and Component Discovery
-  - Command and Control JSON payloads
-  - HTTP or File/Blob for data transport
+### Few “Classes”, many “Instances”
 
-!SLIDE vcenter
+### Messaging as foundation
 
-## Kernel Components
+### Addressing and Component Discovery
 
-- All dynamically discoverable
-- Launch and scale in any order
-- Can come and go as needed
-- Monitor via `HTTP` and `JSON`
-- Location independent
+- Command and Control JSON payloads
+- HTTP or File/Blob for data transport
 
 !SLIDE
 
 ## Kernel Components
 
-- Router
-- CloudController
-- DEA
-- HealthManager
-- Service Provisioning Agent
-- Messaging System
+### All dynamically discoverable
+
+### Launch and scale in any order
+
+### Can come and go as needed
+
+### Monitor via `HTTP` and `JSON`
+
+### Location independent
+
+!SLIDE
+
+## Kernel Components
+
+### Router
+
+### CloudController
+
+### DEA
+
+### HealthManager
+
+### Service Provisioning Agent
+
+### Messaging System
 
 !SLIDE
 
 ## Logical View
 ￼￼￼
-PIC
+![main](/img/LSRC/logical-view.png)
 
 !SLIDE
 
@@ -395,23 +403,49 @@ PIC
 
 <%= include "../shared/cfdotcom.md" %>
 
+!SLIDE vcenter
+
+## April 2012
+
+### Visible Progress
+
+!SLIDE
+
+## Services
+
+### Caldecott
+
+– Tunnel into your services
+- Explore with standard client tools
+
+### New Services on CloudFoundry.com
+
+- PostgreSQL
+- RabbitMQ
+
+### New Services on OSS Mater Branch
+
+- Elastic Search
+- CouchDB
+- Memcached
+
+!SLIDE
+
+## Frameworks, Runtimes, and Tools
+
+- Java and Ruby Auto-Reconfiguration
+- Scala, node.JS 0.6.*, Erlang, JRuby, PHP, Python, .NET, Spring 3.1, Grails 2.0 •  Multi-Node Chef based deployment tools
+- Maven Plugin, Eclipse Integration
+- VMC manifests, Java Debugging, Rails Console
+
+
 !SLIDE vcenterH2
 
-## After Cloud Foundry launched ...
-
-!SLIDE vcenterH2
-
-## Two Big Lessons
+## Lessons Learned Along the Way
 
 !SLIDE vcenterH2
 
 ## Orchestration
-
-!SLIDE vcenter
-
-## BOSH enters the room
-
-### An open source tool chain for release engineering, deployment and lifecycle management of large scale distributed services.
 
 !SLIDE
 
@@ -433,6 +467,13 @@ PIC
 - Single Tool
 - Dev, Staging, and Production
 - Infrastructure Agnostic
+
+!SLIDE vcenter
+
+## BOSH
+
+### An open source tool chain for release engineering, deployment and lifecycle management of large scale distributed services.
+
 
 !SLIDE
 
@@ -488,6 +529,14 @@ PIC
 - self-hosted
 - open sourced on 4/11/2012
 
+!SLIDE
+
+## Collaboration
+
+http://www.slideshare.net/marklucovsky/cloud-foundry-anniversary-technical-slides/7
+
+http://blog.cloudfoundry.org/2012/06/20/heads-up-on-some-new-cloud-controller-features/
+
 !SLIDE vcenterH2
 
 ## Secure extensibility
@@ -498,7 +547,13 @@ PIC
 
 !SLIDE vcenterH2
 
-## Thanks
+## Thanks to you &
+
+### Mark Lucovsky
+
+### Derek Collison
+
+### Vadim Spivak
 
 !SLIDE
 
