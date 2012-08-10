@@ -37,9 +37,10 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 ## Cloud Foundry Launches
 
+### First Open Platform as a Service(PaaS) built by VMware
+
 ![main](/img/Panel.png)
 
-### First Open Platform as a Service(PaaS) built by VMware
 
 !SLIDE vcenter
 
@@ -47,11 +48,38 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 ### Raise the unit of currency to be the application and its associated services, not the infrastructure
 
-!SLIDE vcenter
 
-## Cloud Foundry's Goals
+!SLIDE vcenterH2
 
-### Best of breed delivery platform for all modern applications and frameworks
+## Simple CLI
+
+!SLIDE
+
+<%= include "../shared/core_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/push.md" %>
+
+!SLIDE
+
+<%= include "../shared/update_apps_vmc.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes2.md" %>
+
+!SLIDE
+
+<%= include "../shared/vmc_services.md" %>
 
 !SLIDE vcenter
 
@@ -59,45 +87,24 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 ### Favor Choice and Openness
 
-!SLIDE vcenterH2
-
-## What did they mean by Open ?
-
 !SLIDE
 
-## Multi Languages
+## Open Means
 
-Choice of languages
+### Multi Languages
 
-- Ruby
-- Java
-- Node.JS
+### Multi Frameworks
 
+### Multi Services
 
-## Multi Frameworks
-
-Choice of frameworks
-
-- Rails
-- Sinatra
-- NodeJS
-- Spring
-
-!SLIDE
-
-## Multi Services
-
-- MongoDB
-- Redis
-- RabbitMQ
-- MySQL
-
-## Multi Clouds
+### Multi Clouds
 
 - CloudFoundry.com
 - AppFog
 - Micro Cloud Foundry
 - Your Cloud
+
+    vmc target api.yourcloud.com
 
 !SLIDE vcenterH2
 
@@ -152,7 +159,7 @@ IaaS creation, management and orchestration
 
 ## Basic Premises
 
-### `Fail` Fast
+### Fail `Fast`
 
 ### Self-Healing
 
@@ -235,7 +242,7 @@ IaaS creation, management and orchestration
 
 ## Architecture
 
-PIC
+![main](/img/LSRC/arch-launch.png)
 
 !SLIDE
 
@@ -315,7 +322,7 @@ PIC
 
 ## Architecture
 
-PIC
+![main](/img/LSRC/pushing-app.png)
 
 !SLIDE
 
@@ -369,6 +376,12 @@ PIC
 - Will randomly pick backend, not semantically aware.
 - Will remove routes that are stale or unhealthy
 - Session stickiness and replication available, but best to avoid if possible
+
+!SLIDE
+
+## Serving Requests
+
+![main](/img/LSRC/http-request.png)
 
 !SLIDE
 
@@ -433,8 +446,9 @@ PIC
 
 ## Frameworks, Runtimes, and Tools
 
-- Java and Ruby Auto-Reconfiguration
-- Scala, node.JS 0.6.*, Erlang, JRuby, PHP, Python, .NET, Spring 3.1, Grails 2.0 •  Multi-Node Chef based deployment tools
+- Node.js, Java and Ruby Auto-Reconfiguration
+- Scala, node.JS 0.6.*, Erlang, JRuby, PHP, Python, .NET, Spring 3.1, Grails 2.0, Play
+- Multi-Node Chef based deployment tools
 - Maven Plugin, Eclipse Integration
 - VMC manifests, Java Debugging, Rails Console
 

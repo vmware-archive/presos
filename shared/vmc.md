@@ -2,7 +2,7 @@
 
 Install the CLI for Cloud Foundry called VMC. Its packaged as a Ruby gem.
 
-    sudo gem install vmc --pre
+    sudo gem install vmc
 
 Log into cloudfoundry.com or any other cloudfoundry instance
 
