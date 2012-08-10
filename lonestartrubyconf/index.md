@@ -1,5 +1,39 @@
 title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
+!SLIDE
+
+## Agenda Today
+
+<% left do %>
+
+### 1- Cloud Foundry at Launch
+
+Goals and initial architecture.
+
+### 2- Cloud Foundry Today
+
+Lessons learned.
+
+### 3- Cloud Foundry Future
+
+Help us build it.
+<% end %>
+
+<% right do %>
+![main](/img/LSRC/china.png)
+<% end %>
+
+!SLIDE
+
+<% left do %>
+<%= include "../shared/us/monica.md" %>
+<% end %>
+
+<% right do %>
+![main](/img/head2.jpg)
+<% end %>
+
+
 !SLIDE vcenterH2
 
 ## This is the story of a PaaS
@@ -20,27 +54,35 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 ### A PaaS is a system that allows you to:
 
-- Easily deploy web applications
-- Bind the applications to services
-- Scale the applications
+
+### 1 - Easily `deploy` web `Applications`
+
+
+### 2 - `Bind` the applications to `Services`
+
+
+### 3 - `Scale` the `Applications`
+
 
 !SLIDE vcenterH2
 
-## Back to our story...
+## Part One
 
 !SLIDE vcenterH2
-
 
 ## April 2011
 
-!SLIDE
+!SLIDE vcenterH2
 
 ## Cloud Foundry Launches
 
-### First Open Platform as a Service(PaaS) built by VMware
+!SLIDE
+
+## First Open Platform as a Service(PaaS)
 
 ![main](/img/Panel.png)
 
+### Built by VMware
 
 !SLIDE vcenter
 
@@ -48,14 +90,19 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 ### Raise the unit of currency to be the application and its associated services, not the infrastructure
 
+!SLIDE vcenterH2
+
+## How ?
 
 !SLIDE vcenterH2
 
-## Simple CLI
+## Simple Toolchain
 
-!SLIDE
+!SLIDE vcenter
 
-<%= include "../shared/core_vmc.md" %>
+## VMC
+
+### VMware Cloud CLI
 
 !SLIDE
 
@@ -63,19 +110,12 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 !SLIDE
 
-<%= include "../shared/push.md" %>
+<%= include "../shared/core_vmc.md" %>
+
 
 !SLIDE
 
 <%= include "../shared/update_apps_vmc.md" %>
-
-!SLIDE
-
-<%= include "../shared/runtimes.md" %>
-
-!SLIDE
-
-<%= include "../shared/runtimes2.md" %>
 
 !SLIDE
 
@@ -89,8 +129,9 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 !SLIDE
 
-## Open Means
+## OPEN as in:
 
+<% left do %>
 ### Multi Languages
 
 ### Multi Frameworks
@@ -99,12 +140,13 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 ### Multi Clouds
 
-- CloudFoundry.com
-- AppFog
-- Micro Cloud Foundry
-- Your Cloud
-
     vmc target api.yourcloud.com
+
+<% end %>
+
+<% right do %>
+![main](/img/LSRC/start-triangle.png)
+<% end %>
 
 !SLIDE vcenterH2
 
@@ -112,13 +154,13 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 !SLIDE vcenter
 
-## Extensibility !
+## Extensibility
 
-### Add your choice language, framework or service
+### Easy to add your choice language, framework or service
 
 !SLIDE
 
-## Open Source !
+## Open Source
 
 - Cloud Foundry was Open Sourced under Apache License
 - On Github [https://github.com/cloudfoundry/vcap](https://github.com/cloudfoundry/vcap)
@@ -135,8 +177,9 @@ title: Built on Ruby: Cloud Foundry, the Open Source PaaS Story
 
 !SLIDE
 
-## How was it Built?
+## How was Cloud Foundry Built?
 
+<% left do %>
 ### Kernel (CloudFoundry OSS)
 
 Core PaaS System
@@ -149,13 +192,17 @@ Layered on top of IaaS
 
 IaaS creation, management and orchestration
 ￼
-!SLIDE
+<% end %>
 
-## High Level
+<% right do %>
 ￼￼
 ![main](/img/LSRC/overview-high-level.png)
 
+<% end %>
+
 !SLIDE
+
+<%left do%>
 
 ## Basic Premises
 
@@ -171,7 +218,9 @@ IaaS creation, management and orchestration
 
 ### Should be as simple as possible
 
-!SLIDE
+<%end%>
+
+<%right do%>
 
 ## Basic Patterns
 
@@ -187,7 +236,11 @@ IaaS creation, management and orchestration
 
 ### Eventually Consistent
 
+<%end%>
+
 !SLIDE
+
+<% left do %>
 
 ## Basic Design
 
@@ -201,10 +254,11 @@ IaaS creation, management and orchestration
 
 - Command and Control JSON payloads
 - HTTP or File/Blob for data transport
+<% end %>
 
-!SLIDE
 
-## Kernel Components
+<%right do%>
+## Objectives
 
 ### All dynamically discoverable
 
@@ -216,91 +270,148 @@ IaaS creation, management and orchestration
 
 ### Location independent
 
+<%end%>
+
 !SLIDE
+
+<% left do %>
 
 ## Kernel Components
 
-### Router
+### - Router
 
-### CloudController
+### - Cloud Controller
 
-### DEA
+### - DEA
 
-### HealthManager
+### - Health Manager
 
-### Service Provisioning Agent
+### - Service Provisioning Agent
 
-### Messaging System
+### - Messaging System
 
-!SLIDE
+<% end %>
+
+<% right do %>
 
 ## Logical View
 ￼￼￼
 ![main](/img/LSRC/logical-view.png)
 
+<% end %>
+
 !SLIDE
 
 ## Architecture
 
-![main](/img/LSRC/arch-launch.png)
-
-!SLIDE
-
-## Messaging “The Nervous System”
-
-- Addressing and Discovery
-  - No static IPs or DNS lookups req’d
-  - Just Layer 4
-- Command and Control
-- Central communication system
-- Dial tone, fire and forget
-- Protects *itself* at all costs
-- Idempotent semantics
-
-!SLIDE
-
-## Router “Traffic Cop”
-
-- Handles all HTTP traffic
-- Maintains distributed routing state
-- Routes URLs to applications
-- Distributes load among instances
-- Realtime distributed updates to routing tables from DEAs
+![main](/img/LSRC/arch.png)
 
 !SLIDE
 
 ## CloudController “The King”
 
-- Handles all state transitions
-- Deals with users, apps, and services
-- Packages and Stages applications
-- Binds Services to Applications
-- Presents external REST API
+![main](/img/LSRC/cc.png)
 
-!SLIDE
+### Handles all state transitions
 
-## HealthManager “Court Jester”
+### Deals with users, apps, and services
 
-- Monitors the state of the world
-- Initial value with realtime delta updates to “intended” vs “real”
-- Determines drift
-- Complains to the CloudControllers when something is not correct
-- No power to change state itself
+### Packages and Stages applications
+
+### Binds Services to Applications
+
+### Presents external REST API
 
 !SLIDE
 
 ## DEA “Droplet Execution Agent”
 
-- Responsible for running all applications Monitors all applications
-  - CPU, Mem, IO, Threads, Disk, FDs, etc
-- All apps look same to DEA
-  - start and stop
-- Express ability and desire to run an application
-- runtimes, options, cluster avoidance, memory/cpu
-- Alerts on any change in state of applications
-- Single or Multi-Tenant
-  - Hypervisor, Unix File and User, Linux Containers*
-  - Provides secure/constrained OS runtime
+### Responsible for running all applications Monitors all applications
+
+CPU, Mem, IO, Threads, Disk, FDs, etc
+
+### All apps look same to DEA
+
+`start` and `stop`
+
+### Express ability and desire to run an application
+
+### runtimes, options, cluster avoidance, memory/cpu
+
+### Alerts on any change in state of applications
+
+### Single or Multi-Tenant
+
+- Hypervisor, Unix File and User, Linux Containers*
+- Provides secure/constrained OS runtime
+
+!SLIDE
+
+## HealthManager “Court Jester”
+
+<% left do %>
+
+### Monitors the state of the world
+
+### Initial value with realtime delta updates to “intended” vs “real”
+
+### Determines drift
+
+### Complains to the CloudControllers when something is not correct
+
+### No power to change state itself
+
+<% end %>
+
+<% right do %>
+![main](/img/LSRC/healthmanager.png)
+<% end %>
+
+!SLIDE
+
+## Messaging “The Nervous System”
+
+<% left do %>
+
+### Addressing and Discovery
+  - No static IPs or DNS lookups req’d
+  - Just Layer 4
+
+### Command and Control
+
+### Central communication system
+
+### Dial tone, fire and forget
+
+### Protects *itself* at all costs
+
+### Idempotent semantics
+
+<% end %>
+<% right do %>
+![main](/img/LSRC/messaging.png)
+<% end %>
+
+!SLIDE
+
+## Router “Traffic Cop”
+
+<% left do %>
+
+### Handles all HTTP traffic
+
+### Maintains distributed routing state
+
+### Routes URLs to applications
+
+### Distributes load among instances
+
+### Realtime distributed updates to routing tables from DEAs
+
+<% end %>
+<% right do %>
+![main](/img/LSRC/router.png)
+<% end %>
 
 !SLIDE vcenterH2
 
@@ -311,37 +422,33 @@ IaaS creation, management and orchestration
 
 ## Pushing an App
 
-- Client (VMC/STS) pushes meta-data to CC
+![main](/img/LSRC/pushing-app.png)
+
+- Client pushes meta-data to CC
 - Client optionally pushes resource signatures (diff analysis, sys wide)
 - Client pushes app resources to CC CC puts app together
 - CC stages app asynchronously
 - CC binds and stages services Droplet ready
 
-
-!SLIDE
-
-## Architecture
-
-![main](/img/LSRC/pushing-app.png)
-
 !SLIDE
 
 ## Running an App
 
+    vmc start <app_name>
 
 - CC asks DEAs for “help”
 - First DEA back wins! Simple
 - CC sends start request to selected DEA
 - DEA pushes the “green” button
 - DEA waits and monitors pid and ephemeral port for app to bind
-- When app is healthy, sends “register” message Register message is seen by HM and Routers Routers bind URL to host:port
+- When app is healthy, sends “register” message
+- Register message is seen by HM and Routers
+- Routers bind URL to host:port
 
-!SLIDE
-
-## DEAs answer?
+### DEAs answer?
 
 - DEAs first determine YES or NO
-- correct runtime, options, memory, etc
+  - correct runtime, options, memory, etc
 - Then calculate a Delay Taint
   - SHA hash of application
   - memory
@@ -352,9 +459,15 @@ IaaS creation, management and orchestration
 
 ## Scale up & down?
 
-- Exact steps as running the app the first time
+    vmc instances <app_name> +5
+
+    vmc instances <app_name> -2
+
+    vmc stats <app_name>
+
+- Same `exact steps` as running the app the first time
 - SHA1 taint helps avoid clustering
-- memory/cpu taint helps distribute as evenly as possible
+  - memory/cpu taint helps distribute as evenly as possible
 - Nothing pre-computed
 - Nothing assumed
 
@@ -364,41 +477,57 @@ IaaS creation, management and orchestration
 
 ### If your app stops and we did not tell it to, that is a crash
 
-- Crashed apps are immediately detected by DEA and messaged
-- Routers disconnect route instantly HM will signal CC something is wrong
-- CC will issue run sequence again
+### Crashed apps are immediately detected by DEA and messaged
+
+### Routers disconnect route instantly HM will signal CC something is wrong
+
+### CC will issue run sequence again
 
 !SLIDE
+
+<% left do %>
 
 ## Access to my App?
 
-- All routers understand where all instances of your application are running
-- Will randomly pick backend, not semantically aware.
-- Will remove routes that are stale or unhealthy
-- Session stickiness and replication available, but best to avoid if possible
+### All routers understand where all instances of your application are running
 
-!SLIDE
+### Will randomly pick backend, not semantically aware.
+
+### Will remove routes that are stale or unhealthy
+
+### Session stickiness and replication available, but best to avoid if possible
+
+<% end %>
+
+<%right do %>
 
 ## Serving Requests
 
 ![main](/img/LSRC/http-request.png)
 
+<% end %>
+
 !SLIDE
 
 ## What about Services?
 
-PIC
+![main](/img/LSRC/service_provisioning.png)
 
 !SLIDE
 
 ## Services
 
-- Service Advertisement
-- Service Provisioning
-- Gateway fronts multi-backends Service
-- Nodes scale independent App and service talk directly
-- API to register into system
-- Closure for additional value
+### Service Advertisement
+
+### Service Provisioning
+
+### Gateway fronts multi-backends Service
+
+### Nodes scale independent App and service talk directly
+
+### API to register into system
+
+### Closure for additional value
 
 !SLIDE
 
@@ -419,6 +548,21 @@ PIC
 !SLIDE vcenter
 
 ## April 2012
+
+!SLIDE
+
+![main](/img/LSRC/adoption.png)
+
+!SLIDE
+
+<%= include "../shared/runtimes.md" %>
+
+!SLIDE
+
+<%= include "../shared/runtimes2.md" %>
+
+!SLIDE vcenterH2
+
 
 ### Visible Progress
 
@@ -569,15 +713,7 @@ http://blog.cloudfoundry.org/2012/06/20/heads-up-on-some-new-cloud-controller-fe
 
 ### Vadim Spivak
 
-!SLIDE
 
-<% left do %>
-<%= include "../shared/us/monica.md" %>
-<% end %>
-
-<% right do %>
-![main](/img/head2.jpg)
-<% end %>
 
 !SLIDE vcenterH2
 
