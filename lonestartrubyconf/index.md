@@ -184,6 +184,8 @@ Help us build it.
 
 Core PaaS System
 
+[https://github.com/cloudfoundry/cloud_controller](https://github.com/cloudfoundry/cloud_controller)
+
 ### Kernel and Orchestrator Shells
 
 Layered on top of IaaS
@@ -475,43 +477,29 @@ CPU, Mem, IO, Threads, Disk, FDs, etc
 
 ## Crashes?
 
-### If your app stops and we did not tell it to, that is a crash
+![main](/img/LSRC/fail-pics-501.jpg)
 
-### Crashed apps are immediately detected by DEA and messaged
-
-### Routers disconnect route instantly HM will signal CC something is wrong
-
-### CC will issue run sequence again
+- If your app stops and we did not tell it to, that is a crash
+- Crashed apps are immediately detected by DEA and messaged
+- Routers disconnect route instantly HM will signal CC something is wrong
+- CC will issue run sequence again
 
 !SLIDE
 
-<% left do %>
-
-## Access to my App?
-
-### All routers understand where all instances of your application are running
-
-### Will randomly pick backend, not semantically aware.
-
-### Will remove routes that are stale or unhealthy
-
-### Session stickiness and replication available, but best to avoid if possible
-
-<% end %>
-
-<%right do %>
 
 ## Serving Requests
 
 ![main](/img/LSRC/http-request.png)
 
-<% end %>
 
-!SLIDE
+- All routers understand where all instances of your application are running
+- Will randomly pick backend, not semantically aware.
+- Will remove routes that are stale or unhealthy
+- Session stickiness and replication available, but best to avoid if possible
+
+!SLIDE vcenterH2
 
 ## What about Services?
-
-![main](/img/LSRC/service_provisioning.png)
 
 !SLIDE
 
@@ -531,27 +519,41 @@ CPU, Mem, IO, Threads, Disk, FDs, etc
 
 !SLIDE
 
-## Provisioning
+## Architecture of Example Echo Service
 
-PIC
+[Try it out](https://github.com/cloudfoundry/oss-docs/tree/master/vcap/adding_a_system_service)
 
-!SLIDE
+![main](/img/LSRC/service_provisioning.png)
 
-## Access
+!SLIDE vcenterH2
 
-PIC
+## Part Two
 
-!SLIDE
-
-<%= include "../shared/cfdotcom.md" %>
-
-!SLIDE vcenter
+!SLIDE vcenterH2
 
 ## April 2012
 
 !SLIDE
 
-![main](/img/LSRC/adoption.png)
+## Services
+
+### Caldecott
+
+- Tunnel into your services
+- Explore with standard client tools
+
+### New Services
+
+- PostgreSQL (on CF.com)
+- RabbitMQ (on CF.com)
+
+[https://github.com/cloudfoundry/vcap-services](https://github.com/cloudfoundry/vcap-services)
+
+- Elastic Search
+- CouchDB
+- Memcached
+- Neo4j
+- vBlob, Atmos
 
 !SLIDE
 
@@ -561,41 +563,23 @@ PIC
 
 <%= include "../shared/runtimes2.md" %>
 
-!SLIDE vcenterH2
+!SLIDE
 
+## Frameworks & Tools
 
-### Visible Progress
+- Node.js, Java and Ruby `Auto-Reconfiguration`
+- Scala, Node.js 0.6.*, Erlang, JRuby, PHP, Python, .NET, Spring 3.1, Grails 2.0, Play
+- Maven Plugin, `Eclipse` Integration and many other clients
+- VMC `manifests`
+- Java Debugging
+- Rails Console
+- Standalone Apps
 
 !SLIDE
 
-## Services
+## Really Great Traction
 
-### Caldecott
-
-– Tunnel into your services
-- Explore with standard client tools
-
-### New Services on CloudFoundry.com
-
-- PostgreSQL
-- RabbitMQ
-
-### New Services on OSS Mater Branch
-
-- Elastic Search
-- CouchDB
-- Memcached
-
-!SLIDE
-
-## Frameworks, Runtimes, and Tools
-
-- Node.js, Java and Ruby Auto-Reconfiguration
-- Scala, node.JS 0.6.*, Erlang, JRuby, PHP, Python, .NET, Spring 3.1, Grails 2.0, Play
-- Multi-Node Chef based deployment tools
-- Maven Plugin, Eclipse Integration
-- VMC manifests, Java Debugging, Rails Console
-
+![main](/img/LSRC/adoption.png)
 
 !SLIDE vcenterH2
 
@@ -624,35 +608,22 @@ PIC
 - Easy to use
 - Single Tool
 - Dev, Staging, and Production
-- Infrastructure Agnostic
+- `Infrastructure Agnostic`
 
-!SLIDE vcenter
+!SLIDE vcenterH2
 
-## BOSH
-
-### An open source tool chain for release engineering, deployment and lifecycle management of large scale distributed services.
-
+## The Solution
 
 !SLIDE
 
-## Logical concepts
+## BOSH
 
-### Packages
+    An open source tool chain for release engineering,
+    deployment and lifecycle management of large scale distributed services.
 
-- just the bits (source and binary objects)
+### Now Open Source
 
-### Jobs
-
-- configuration templates
-- control/init scripts
-- supervision and monitoring
-
-### Releases
-
-- fully self-contained
-- shared
-- git repository
-- environment and infrastructure agnostic
+[https://github.com/cloudfoundry/bosh](https://github.com/cloudfoundry/bosh)
 
 !SLIDE vcenterH2
 
@@ -689,34 +660,87 @@ PIC
 
 !SLIDE
 
+## Logical concepts
+
+### Packages
+
+- just the bits (source and binary objects)
+
+### Jobs
+
+- configuration templates
+- control/init scripts
+- supervision and monitoring
+
+### Releases
+
+- fully self-contained
+- shared
+- git repository
+- environment and infrastructure agnostic
+
+!SLIDE vcenterH2
+
+## Working with Users
+
+!SLIDE
+
+## User Account & Authentication Service(UAA)
+
+<%left do %>
+- Centralized Identity Management
+- Single Sign On
+- Delegating Access to Services
+- User Account Management
+- Uses: OAuth 2, SCIM and OpenID Connect
+- Written in Spring but has a Ruby(Thor) CLI
+<% end %>
+
+<% right do %>
+![main](/img/OAuth2.png)
+<% end %>
+
+
+### Contribute:
+
+[https://github.com/cloudfoundry/uaa](https://github.com/cloudfoundry/uaa)
+
+!SLIDE vcenterH2
+
+## Part Three
+
+!SLIDE vcenterH2
+
+## The Future
+
+!SLIDE
+
 ## Collaboration
 
-http://www.slideshare.net/marklucovsky/cloud-foundry-anniversary-technical-slides/7
+We need you to help us. We are currently finishing a new version of the Cloud Controller
 
-http://blog.cloudfoundry.org/2012/06/20/heads-up-on-some-new-cloud-controller-features/
+[https://github.com/cloudfoundry/cloud_controller_ng/](https://github.com/cloudfoundry/cloud_controller_ng/)
 
-!SLIDE vcenterH2
+## New Features
 
-## Secure extensibility
+### Teams
 
-!SLIDE vcenterH2
+### Organizations
 
-## UAA enters the room
+### Spaces
 
-!SLIDE vcenterH2
+### Learn More
 
-## Thanks to you &
-
-### Mark Lucovsky
-
-### Derek Collison
-
-### Vadim Spivak
-
-
+[http://blog.cloudfoundry.org](http://blog.cloudfoundry.org/2012/06/20/heads-up-on-some-new-cloud-controller-features/)
 
 !SLIDE vcenterH2
 
 ## [github.com/cloudfoundry](http://github.com/cloudfoundry)
+
+!SLIDE vcenter
+
+## Thanks !
+
+### Contact: mwilkinson@vmware.com
 
 ￼
