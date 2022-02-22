@@ -1,3 +1,6 @@
+# This repository is no longer actively maintained by VMware, Inc.
+
+
 ## Slideshows for Cloud Foundry
 
 This repo will have all the presos I am using for Cloud Foundry presentations.
